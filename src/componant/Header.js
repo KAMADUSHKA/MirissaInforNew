@@ -62,7 +62,7 @@ export default function Header() {
               textDecoration: "none",
             }}
           >
-            FOOD STALL
+            Mirissa Infor
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", lg: "none" } }}>
