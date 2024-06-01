@@ -44,6 +44,22 @@ import { useTheme } from "@emotion/react";
 import { blue } from "@mui/material/colors";
 import OurProces from "../MUI/OurProces";
 
+import  { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// import './styles.css';
+
+// import required modules
+import { Autoplay, Pagination } from 'swiper/modules';
+
+
+
+
 const CardData = [
   {
     id: 1,
@@ -131,8 +147,46 @@ const NutritionistData = [
 export default function Dashbord() {
   const theme = useTheme();
 
+  
+
+ const swiperCard = (item,key) => (
+  <SwiperSlide>
+  <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={3}>
+
+<Box
+  sx={{
+    Width: 345,
+    height: 350,
+    backgroundColor: 'transparent',
+    // borderRadius: 6,
+    // backgroundColor: "rgba(197, 235, 170, 0.1)",
+    border: "transparent",
+  }}
+ 
+>
+<Card
+  sx={{
+    Width: 325,
+    height: 320,
+    borderRadius: 6,
+    backgroundColor: "rgba(127, 235, 170, 0.3)",
+    border: "1px solid rgba(0, 0, 0, 0.2)",
+  }}
+  // elevation={5}
+>
+  
+  </Card>
+  
+  </Box>
+
+</Grid>
+</SwiperSlide>
+ )
+
   const cardData = (item, key) => (
+    
     <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={3}>
+      
       <Card
         sx={{
           Width: 345,
@@ -198,7 +252,9 @@ export default function Dashbord() {
           </container>
         </CardActionArea>
       </Card>
+      
     </Grid>
+    
   );
   const NutritionistCard = (item, key) => (
     <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={4}>
@@ -385,35 +441,15 @@ export default function Dashbord() {
             textShadow: "2px 45px 4px rgba(18,104,18,0.1)",
           }}
         >
-          OUR PROCESS
+          MIRISSA
         </Typography>
         <br />
         <br />
+
+
+
         <OurProces />
-        {/* <Grid container spacing={1}>
-          <Grid item xs={12}>
-            <ImageList
-              variant="masonry"
-              cols={3}
-              gap={60}
-              sx={{ width: "100%", maxWidth: "auto" }}
-            >
-              {itemData.map((item) => (
-                <ImageListItem key={item.title}>
-                  <img
-                    srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
-                    src={`${item.img}?w=161&fit=crop&auto=format`}
-                    alt={item.title}
-                    loading="lazy"
-                  />
-                  <Typography variant="subtitle1" align="center">
-                    {item.title}
-                  </Typography>
-                </ImageListItem>
-              ))}
-            </ImageList>
-          </Grid>
-        </Grid> */}
+        
         <br />
         <br />
         <br />
@@ -433,292 +469,70 @@ export default function Dashbord() {
             textShadow: "2px 45px 4px rgba(18,104,18,0.1)",
           }}
         >
-          NUTRITION MEAL PLANS
+          CATEGORIES
         </Typography>
         <br />
-        <Grid container spacing={2} marginTop={3} marginBottom={3}>
-          {NutritionistData.map((card, key) => NutritionistCard(card, key))}
-        </Grid>
-        <br />
-        <br />
-        <br />
 
-        {/* YOUR HEALTH GOALS  */}
-
-        <Typography
-          variant="h2"
-          align="center"
-          gutterBottom
-          sx={{
-            fontWeight: "bold",
-            fontFamily: "Cormorant Garamond, serif",
-            color: "rgb(18, 104, 18)",
-            textShadow: "2px 45px 4px rgba(18,104,18,0.1)",
-          }}
-        >
-          YOUR HEALTH GOALS
-        </Typography>
-        <br />
         <br />
         <br />
         <Grid container spacing={2} marginTop={3} marginBottom={3}>
-          <Grid key={Key} item xs={12} sm={12} md={6} lg={6} xl={6}>
-            <Card
-              sx={{
-                display: "flex",
-                Width: 345,
-                height: 390,
-                borderRadius: 6,
-                boxShadow: "0px 3px 6px rgba(0, 0, 0, 0)",
-              }}
-            >
-              <Box sx={{ display: "flex", flexDirection: "column" }}>
-                <CardContent sx={{ flex: "1 0 auto" }}>
-                  <Box
-                    sx={{
-                      backgroundColor: "rgb(60, 179, 113, 0.3)",
-
-                      padding: 1.5,
-                      // paddingBottom:4,
-                      borderRadius: 8,
-                    }}
-                  >
-                    <Typography component="div" variant="h5">
-                      WEIGHT LOSS
-                    </Typography>
-                    <Typography
-                      variant="subtitle1"
-                      color="text.secondary"
-                      component="div"
-                    >
-                      Forget starving yourself to lose weight. Let us introduce
-                      you to a healthy regime where you make smart food choices
-                      without having to skip them to lose weight.
-                    </Typography>
-                  </Box>
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      height: 235,
-                      width: 240,
-                      display: { xs: "flex", sm: "none" },
-                      marginTop: 1,
-                      marginLeft: 11,
-                    }}
-                    image={H1}
-                    // alt="Live from space album cover"
-                  />
-                </CardContent>
-              </Box>
-              <CardMedia
-                component="img"
-                sx={{
-                  height: 235,
-                  width: 200,
-                  display: { xs: "none", sm: "flex" },
-                }}
-                image={H1}
-                // alt="Live from space album cover"
-              />
-            </Card>
-          </Grid>
-          <Grid key={Key} item xs={12} sm={12} md={6} lg={6} xl={6}>
-            <Card
-              sx={{
-                display: "flex",
-                Width: 345,
-                height: 420,
-                borderRadius: 6,
-                boxShadow: "0px 3px 6px rgba(0, 0, 0, 0)",
-              }}
-            >
-              <Box sx={{ display: "flex", flexDirection: "column" }}>
-                <CardContent sx={{ flex: "1 0 auto" }}>
-                  <Box
-                    sx={{
-                      backgroundColor: "rgba(255, 99, 71, 0.3)",
-
-                      padding: 1.5,
-                      // paddingBottom:4,
-                      borderRadius: 8,
-                    }}
-                  >
-                    <Typography component="div" variant="h5">
-                      ATHLETE
-                    </Typography>
-                    <Typography
-                      variant="subtitle1"
-                      color="text.secondary"
-                      component="div"
-                    >
-                      When you are an athlete, you need a meal plan that will
-                      support your rigorous activities, which is exactly what we
-                      serve.
-                    </Typography>
-                  </Box>
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      width: 340,
-                      display: { xs: "flex", sm: "none" },
-                      marginTop: 1,
-                      marginLeft: 9,
-                    }}
-                    image={H2}
-                    // alt="Live from space album cover"
-                  />
-                </CardContent>
-              </Box>
-              <CardMedia
-                component="img"
-                sx={{ width: 240, display: { xs: "none", sm: "flex" } }}
-                image={H2}
-                // alt="Live from space album cover"
-              />
-            </Card>
-          </Grid>
-          <Grid key={Key} item xs={12} sm={12} md={6} lg={6} xl={6}>
-            <Card
-              sx={{
-                display: "flex",
-                Width: 345,
-                height: 400,
-                borderRadius: 6,
-                boxShadow: "0px 3px 6px rgba(0, 0, 0, 0)",
-              }}
-            >
-              <Box sx={{ display: "flex", flexDirection: "column" }}>
-                <CardContent sx={{ flex: "1 0 auto" }}>
-                  <Box
-                    sx={{
-                      backgroundColor: "rgb(106, 90, 205, 0.3)",
-
-                      padding: 1.5,
-                      // paddingBottom:4,
-                      borderRadius: 8,
-                    }}
-                  >
-                    <Typography component="div" variant="h5">
-                      WELLNESS
-                    </Typography>
-                    <Typography
-                      variant="subtitle1"
-                      color="text.secondary"
-                      component="div"
-                    >
-                      Lead a wholesome life with our wellness meal plan that
-                      will enhance the quality of your life, keeping you healthy
-                      across the board.
-                    </Typography>
-                  </Box>
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      width: 332,
-                      display: { xs: "flex", sm: "none" },
-                      marginTop: 1,
-                      marginLeft: 11,
-                    }}
-                    image={H3}
-                    // alt="Live from space album cover"
-                  />
-                </CardContent>
-              </Box>
-              <CardMedia
-                component="img"
-                sx={{ width: 230, display: { xs: "none", sm: "flex" } }}
-                image={H3}
-                // alt="Live from space album cover"
-              />
-            </Card>
-          </Grid>
-          <Grid key={Key} item xs={12} sm={12} md={6} lg={6} xl={6}>
-            <Card
-              sx={{
-                display: "flex",
-                Width: 345,
-                height: 400,
-                borderRadius: 6,
-                boxShadow: "0px 3px 6px rgba(0, 0, 0, 0)",
-              }}
-            >
-              <Box sx={{ display: "flex", flexDirection: "column" }}>
-                <CardContent sx={{ flex: "1 0 auto" }}>
-                  <Box
-                    sx={{
-                      backgroundColor: "rgb(255, 152, 10, 0.3)",
-
-                      padding: 1.5,
-                      // paddingBottom:4,
-                      borderRadius: 8,
-                    }}
-                  >
-                    <Typography component="div" variant="h5">
-                      MUSCLE GAIN
-                    </Typography>
-                    <Typography
-                      variant="subtitle1"
-                      color="text.secondary"
-                      component="div"
-                    >
-                      Give your muscles the necessary boost with our
-                      muscle-enhancing food through our meal plan which will
-                      accelerate your fitness journey with remarkable positive
-                      results.
-                    </Typography>
-                  </Box>
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      marginTop: 1,
-                      width: 332,
-                      display: { xs: "flex", sm: "none" },
-                      marginLeft: 10,
-                    }}
-                    image={H4}
-                    // alt="Live from space album cover"
-                  />
-                </CardContent>
-              </Box>
-              <CardMedia
-                component="img"
-                sx={{ width: 175, display: { xs: "none", sm: "flex" } }}
-                image={H4}
-                // alt="Live from space album cover"
-              />
-            </Card>
-          </Grid>
-        </Grid>
-
-        {/* <Grid container spacing={2} marginTop={3} marginBottom={3}>
-          {CardData.map((card, key) => HealthGoals(card, key))}
-        </Grid> */}
-        <br />
-        <br />
-        <br />
-
-        {/*  Meal Plans  */}
-
-        <Typography
-          variant="h2"
-          align="center"
-          gutterBottom
-          sx={{
-            fontWeight: "bold",
-            fontFamily: "Cormorant Garamond, serif",
-            color: "rgb(18, 104, 18)",
-            textShadow: "2px 45px 4px rgba(18,104,18,0.1)",
-          }}
-        >
-          Meal Plans
-        </Typography>
-        <br />
-        <br />
-        <Grid container spacing={2} marginTop={3} marginBottom={3}>
+       
           {CardData.map((card, key) => cardData(card, key))}
+          
           {/* {data.map((card) => cardData(card, card.card_id))} */}
+        
         </Grid>
+
+        <Swiper
+        // slidesPerView={2}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay:2500,
+          disableOnInteraction:false,
+        }}
+        modules={[Pagination, Autoplay]}
+        className="mySwiper"
+        breakpoints={{
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 480px
+          520: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 1024px
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
+      >
+        
+        <Grid container spacing={1} marginTop={3} marginBottom={3}>
+       
+        {CardData.map((card, key) => swiperCard(card, key))}
+       
+        </Grid>
+        
+      </Swiper>
+
+
+
+    <br />
+        <br /><br />
+        <br />
+       
+       
       </Container>
+
+      
     </>
   );
 }
