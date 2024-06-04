@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-
+import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 
 const pages = [
   "Home",
@@ -46,7 +46,8 @@ export default function Header() {
     <AppBar position="static" sx={{backgroundColor:"rgb(18, 104, 18)"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", lg: "flex" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "none", lg: "flex" }, mr: 1 }} /> */}
+          <BeachAccessIcon sx={{ display: { xs: "none", lg: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -62,7 +63,7 @@ export default function Header() {
               textDecoration: "none",
             }}
           >
-            Mirissa Infor
+            Mirissa Info
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", lg: "none" } }}>
@@ -121,7 +122,8 @@ export default function Header() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", lg: "none" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "flex", lg: "none" }, mr: 1 }} /> */}
+          <BeachAccessIcon sx={{ display: { xs: "flex", lg: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -138,7 +140,7 @@ export default function Header() {
               textDecoration: "none",
             }}
           >
-            FOOD STALL
+            Mirissa Info
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}>
             {pages.map((page) => (
