@@ -90,7 +90,7 @@ export default function Footer() {
                         textDecoration: "none",
                       }}
                     >
-                      Adeona Technologies
+                      WWW.MirissaInfo.com
                     </Typography>
                   </Box>
                   <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
@@ -169,7 +169,7 @@ export default function Footer() {
                       fontSize: 12,
                     }}
                   >
-                    @ 2023 Copyright: Adeona Technologies PVT (LTD) All Rights
+                    @ 2023 Copyright: WWW.MirissaInfo.com, All Rights
                     Reserved
                   </Typography>
                   </Box>
