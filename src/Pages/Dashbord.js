@@ -33,32 +33,29 @@ import H1 from "../Image/H1.webp";
 import H2 from "../Image/H2.png";
 import H3 from "../Image/H3.png";
 import H4 from "../Image/H4.png";
-import NF from "../Image/NF.jpg"
-import NC from "../Image/NC.jpg"
-import NS from "../Image/NS.jpg"
+import NF from "../Image/NF.jpg";
+import NC from "../Image/NC.jpg";
+import NS from "../Image/NS.jpg";
 import C1 from "../Image/C1.jpg";
-import C2 from "../Image/C2.jpg"
-import C3 from "../Image/C3.jpg"
-import C4 from "../Image/C4.jpg"
+import C2 from "../Image/C2.jpg";
+import C3 from "../Image/C3.jpg";
+import C4 from "../Image/C4.jpg";
 import { useTheme } from "@emotion/react";
 import { blue } from "@mui/material/colors";
 import OurProces from "../MUI/OurProces";
 
-import  { useRef, useState } from 'react';
+import { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 // import './styles.css';
 
 // import required modules
-import { Autoplay, Pagination } from 'swiper/modules';
-
-
-
+import { Autoplay, Pagination } from "swiper/modules";
 
 const CardData = [
   {
@@ -103,90 +100,80 @@ const CardData = [
   },
 ];
 
-const itemData = [
-  {
-    img: P1,
-    title: "Set Your Goal",
-  },
-  {
-    img: P2,
-    title: "Select Your Meal",
-  },
-  {
-    img: P3,
-    title: "Enter Your Information",
-  },
-  {
-    img: P4,
-    title: "place Your Order",
-  },
-  {
-    img: P5,
-    title: "We Process and Deliver Your Order",
-  },
-  {
-    img: P6,
-    title: "Enjoy Your Meals",
-  },
-];
-const NutritionistData = [
-  {
-    img: NS,
-    title: "MySelf",
-  },
-  {
-    img: NC,
-    title: "Children",
-  },
-  {
-    img: NF,
-    title: "Family",
-  },
-];
+// const itemData = [
+//   {
+//     img: P1,
+//     title: "Set Your Goal",
+//   },
+//   {
+//     img: P2,
+//     title: "Select Your Meal",
+//   },
+//   {
+//     img: P3,
+//     title: "Enter Your Information",
+//   },
+//   {
+//     img: P4,
+//     title: "place Your Order",
+//   },
+//   {
+//     img: P5,
+//     title: "We Process and Deliver Your Order",
+//   },
+//   {
+//     img: P6,
+//     title: "Enjoy Your Meals",
+//   },
+// ];
+// const NutritionistData = [
+//   {
+//     img: NS,
+//     title: "MySelf",
+//   },
+//   {
+//     img: NC,
+//     title: "Children",
+//   },
+//   {
+//     img: NF,
+//     title: "Family",
+//   },
+// ];
 
 export default function Dashbord() {
   const theme = useTheme();
 
-  
-
- const swiperCard = (item,key) => (
-  <SwiperSlide>
-  <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={3}>
-
-<Box
-  sx={{
-    Width: 345,
-    height: 350,
-    backgroundColor: 'transparent',
-    // borderRadius: 6,
-    // backgroundColor: "rgba(197, 235, 170, 0.1)",
-    border: "transparent",
-  }}
- 
->
-<Card
-  sx={{
-    Width: 325,
-    height: 320,
-    borderRadius: 6,
-    backgroundColor: "rgba(127, 235, 170, 0.3)",
-    border: "1px solid rgba(0, 0, 0, 0.2)",
-  }}
-  // elevation={5}
->
-  
-  </Card>
-  
-  </Box>
-
-</Grid>
-</SwiperSlide>
- )
+  const swiperCard = (item, key) => (
+    <SwiperSlide>
+      <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={3}>
+        <Box
+          sx={{
+            Width: 345,
+            height: 350,
+            backgroundColor: "transparent",
+            // borderRadius: 6,
+            // backgroundColor: "rgba(197, 235, 170, 0.1)",
+            border: "transparent",
+          }}
+        >
+          <Card
+            sx={{
+              Width: 325,
+              height: 320,
+              borderRadius: 6,
+              backgroundColor: "rgba(127, 235, 170, 0.3)",
+              border: "1px solid rgba(0, 0, 0, 0.2)",
+            }}
+            // elevation={5}
+          ></Card>
+        </Box>
+      </Grid>
+    </SwiperSlide>
+  );
 
   const cardData = (item, key) => (
-    
     <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={3}>
-      
       <Card
         sx={{
           Width: 345,
@@ -252,89 +239,87 @@ export default function Dashbord() {
           </container>
         </CardActionArea>
       </Card>
-      
-    </Grid>
-    
-  );
-  const NutritionistCard = (item, key) => (
-    <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={4}>
-      <Card
-        className="nutritionMeal-card"
-        sx={{
-          Width: 345,
-          height: 330,
-          borderRadius: 6,
-          // backgroundColor: "rgba(197, 235, 170, 0.1)",
-          // border: "1px solid rgba(0, 0, 0, 0.1)",
-        }}
-        elevation={0}
-      >
-        <Box
-          sx={{ height: 280, padding: 2, position: "relative" }}
-          // onClick={() => {
-          //   navigate(`/DigiBill/${item.card_id}`);
-          // }}
-        >
-          <CardHeader
-            sx={{
-              flexDirection: "column",
-              justifyContent: "center",
-              textAlign: "center",
-              height: 80,
-              overflow: "hidden",
-            }}
-            title={
-              <Typography
-                className="nutritionMeal-card-title"
-                gutterBottom
-                variant="h4"
-                component="h2"
-              >
-                {item.title}
-              </Typography>
-            }
-          />
-          <CardActionArea>
-            <Box
-              sx={{
-                // backgroundColor: "rgba(255, 255, 255, 0.8)",
-                height: 180,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                borderRadius: 5,
-              }}
-            >
-              <img
-                src={item.img}
-                className="nutritionMeal-card-img"
-                height="auto"
-                width="300px"
-                style={{ borderRadius: "10px" }}
-                alt=""
-              />
-              {/* <div className="overlay"></div> */}
-              <Typography
-                variant="h3"
-                className="img-title"
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                  color: "rgb(18, 104, 18)",
-                  // backgroundColor:"black",
-                  fontWeight: "bold",
-                }}
-              >
-                {item.title}
-              </Typography>
-            </Box>
-          </CardActionArea>
-        </Box>
-      </Card>
     </Grid>
   );
+  // const NutritionistCard = (item, key) => (
+  //   <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={4}>
+  //     <Card
+  //       className="nutritionMeal-card"
+  //       sx={{
+  //         Width: 345,
+  //         height: 330,
+  //         borderRadius: 6,
+  //         // backgroundColor: "rgba(197, 235, 170, 0.1)",
+  //         // border: "1px solid rgba(0, 0, 0, 0.1)",
+  //       }}
+  //       elevation={0}
+  //     >
+  //       <Box
+  //         sx={{ height: 280, padding: 2, position: "relative" }}
+  //         // onClick={() => {
+  //         //   navigate(`/DigiBill/${item.card_id}`);
+  //         // }}
+  //       >
+  //         <CardHeader
+  //           sx={{
+  //             flexDirection: "column",
+  //             justifyContent: "center",
+  //             textAlign: "center",
+  //             height: 80,
+  //             overflow: "hidden",
+  //           }}
+  //           title={
+  //             <Typography
+  //               className="nutritionMeal-card-title"
+  //               gutterBottom
+  //               variant="h4"
+  //               component="h2"
+  //             >
+  //               {item.title}
+  //             </Typography>
+  //           }
+  //         />
+  //         <CardActionArea>
+  //           <Box
+  //             sx={{
+  //               // backgroundColor: "rgba(255, 255, 255, 0.8)",
+  //               height: 180,
+  //               display: "flex",
+  //               justifyContent: "center",
+  //               alignItems: "center",
+  //               borderRadius: 5,
+  //             }}
+  //           >
+  //             <img
+  //               src={item.img}
+  //               className="nutritionMeal-card-img"
+  //               height="auto"
+  //               width="300px"
+  //               style={{ borderRadius: "10px" }}
+  //               alt=""
+  //             />
+  //             {/* <div className="overlay"></div> */}
+  //             <Typography
+  //               variant="h3"
+  //               className="img-title"
+  //               style={{
+  //                 position: "absolute",
+  //                 top: "50%",
+  //                 left: "50%",
+  //                 transform: "translate(-50%, -50%)",
+  //                 color: "rgb(18, 104, 18)",
+  //                 // backgroundColor:"black",
+  //                 fontWeight: "bold",
+  //               }}
+  //             >
+  //               {item.title}
+  //             </Typography>
+  //           </Box>
+  //         </CardActionArea>
+  //       </Box>
+  //     </Card>
+  //   </Grid>
+  // );
 
   // const HealthGoals = (item, key) => (
   //   <Grid key={Key} item xs={12} sm={12} md={6} lg={6} xl={6}>
@@ -373,7 +358,6 @@ export default function Dashbord() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-         
         }}
       >
         {/* <Carousel className="main-slide" showThumbs={false} showStatus={false} style={{ maxWidth: '60%' }}> */}
@@ -430,7 +414,7 @@ export default function Dashbord() {
       <Container>
         {/* OUR PROCESS  */}
 
-        <Typography
+        {/* <Typography
           variant="h2"
           align="center"
           gutterBottom
@@ -444,19 +428,22 @@ export default function Dashbord() {
           MIRISSA
         </Typography>
         <br />
-        <br />
+        <br /> */}
 
-
-
-        <OurProces />
+        {/* <OurProces />
         
         <br />
         <br />
         <br />
         <br />
-        <br />
+        <br /> */}
 
         {/* NUTRITION MEAL PLANS  */}
+        {/* /******* card*/}
+
+        {/* <Grid container spacing={2} marginTop={3} marginBottom={3}>
+          {CardData.map((card, key) => cardData(card, key))}
+        </Grid> */}
 
         <Typography
           variant="h2"
@@ -475,64 +462,48 @@ export default function Dashbord() {
 
         <br />
         <br />
-        <Grid container spacing={2} marginTop={3} marginBottom={3}>
-       
-          {CardData.map((card, key) => cardData(card, key))}
-          
-          {/* {data.map((card) => cardData(card, card.card_id))} */}
-        
-        </Grid>
 
         <Swiper
-        // slidesPerView={2}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        autoplay={{
-          delay:2500,
-          disableOnInteraction:false,
-        }}
-        modules={[Pagination, Autoplay]}
-        className="mySwiper"
-        breakpoints={{
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 1,
-          },
-          // when window width is >= 480px
-          520: {
-            slidesPerView: 2,
-          },
-          // when window width is >= 768px
-          768: {
-            slidesPerView: 2,
-          },
-          // when window width is >= 1024px
-          1024: {
-            slidesPerView: 3,
-          },
-        }}
-      >
-        
-        <Grid container spacing={1} marginTop={3} marginBottom={3}>
-       
-        {CardData.map((card, key) => swiperCard(card, key))}
-       
-        </Grid>
-        
-      </Swiper>
+          // slidesPerView={2}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper"
+          breakpoints={{
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1,
+            },
+            // when window width is >= 480px
+            520: {
+              slidesPerView: 2,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          <Grid container spacing={1} marginTop={3} marginBottom={3}>
+            {CardData.map((card, key) => swiperCard(card, key))}
+          </Grid>
+        </Swiper>
 
-
-
-    <br />
-        <br /><br />
         <br />
-       
-       
+        <br />
+        <br />
+        <br />
       </Container>
-
-      
     </>
   );
 }
