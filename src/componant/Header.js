@@ -15,11 +15,11 @@ import AdbIcon from "@mui/icons-material/Adb";
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 
 const pages = [
-  "Home",
-  "Plans and Diets",
-  "Custom Meals",
-  "Quick Check Out",
-  "Channel Nutritionist",
+  "Tours & Hires",
+  "Whale Watching",
+  "Vehicle Rent",
+  "Hotel, Restaurants & Spa",
+  "Surfing",
 ];
 const settings = ["Profile", "LogIn", "LogOut"];
 
@@ -100,19 +100,19 @@ export default function Header() {
                   key={page}
                   onClick={() => {
                     handleCloseNavMenu(); 
-                    if (page === "Home") {
+                    if (page === "Tours & Hires") {
                       window.location.href = "/"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
-                    if (page === "Plans and Diets") {
+                    if (page === "Whale Watching") {
                       window.location.href = "/Plans_and_Diets"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
-                    if (page === "Custom Meals") {
+                    if (page === "Vehicle Rent") {
                       window.location.href = "/Custom_Meals"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
-                    if (page === "Quick Check Out") {
+                    if (page === "Hotel, Restaurants & Spa") {
                       window.location.href = "/Quick_Check_Out"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
-                    if (page === "Channel Nutritionist") {
+                    if (page === "Surfing") {
                       window.location.href = "/Channel_Nutritionist"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
                   }}
@@ -148,19 +148,19 @@ export default function Header() {
                 key={page}
                 onClick={() => {
                   handleCloseNavMenu(); // Close the navigation menu
-                  if (page === "Home") {
+                  if (page === "Tours & Hires") {
                     window.location.href = "/"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
-                  if (page === "Plans and Diets") {
+                  if (page === "Whale Watching") {
                     window.location.href = "/Plans_and_Diets"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
-                  if (page === "Custom Meals") {
+                  if (page === "Vehicle Rent") {
                     window.location.href = "/Custom_Meals"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
-                  if (page === "Quick Check Out") {
+                  if (page === "Hotel, Restaurants & Spa") {
                     window.location.href = "/Quick_Check_Out"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
-                  if (page === "Channel Nutritionist") {
+                  if (page === "Surfing") {
                     window.location.href = "/Channel_Nutritionist"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
                 }}
