@@ -472,6 +472,7 @@ export default function Dashbord() {
             delay: 2500,
             disableOnInteraction: false,
           }}
+          loop={true}
           modules={[Pagination, Autoplay]}
           className="mySwiper"
           breakpoints={{
