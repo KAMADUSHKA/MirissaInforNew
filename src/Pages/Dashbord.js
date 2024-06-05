@@ -414,7 +414,7 @@ export default function Dashbord() {
       <Container>
         {/* OUR PROCESS  */}
 
-        {/* <Typography
+        <Typography
           variant="h2"
           align="center"
           gutterBottom
@@ -428,15 +428,14 @@ export default function Dashbord() {
           MIRISSA
         </Typography>
         <br />
-        <br /> */}
+        <br />
+        <h5>Mirissa (Sinhala: මිරිස්ස, romanized: Mirissa; Tamil: மிரிஸ்ஸ, romanized: Miris'sa) is a small town on the south coast of Sri Lanka, located in the Matara District of the Southern Province. It is approximately 150 kilometres (93 mi) south of Colombo and is situated at an elevation of 4 metres (13 ft) above sea level. Mirissa's beach and nightlife make it a popular tourist destination. It is also a fishing port and one of the island's main whale and dolphin watching locations.</h5>
 
-        {/* <OurProces />
-        
         <br />
         <br />
         <br />
         <br />
-        <br /> */}
+        <br /> 
 
         {/* NUTRITION MEAL PLANS  */}
         {/* /******* card*/}
