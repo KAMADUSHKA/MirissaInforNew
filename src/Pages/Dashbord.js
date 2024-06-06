@@ -40,6 +40,14 @@ import C1 from "../Image/C1.jpg";
 import C2 from "../Image/C2.jpg";
 import C3 from "../Image/C3.jpg";
 import C4 from "../Image/C4.jpg";
+import Vehicle_Rent from "../Image/Vehicle_Rent.jpg";
+import Massaging_Spa from "../Image/Massaging_&_Spa.jpg";
+import Diving from "../Image/Diving.jpg";
+import Whale_Watching from "../Image/Whale_Watching.jpg";
+import Mobile_Topups from "../Image/Mobile_Topups.jpg";
+import Restaurants from "../Image/Restaurants.jpg";
+import Surfing from "../Image/Surfing.jpg";
+import Hire_and_Taxi from "../Image/Hire_and_Taxi.jpg";
 import { useTheme } from "@emotion/react";
 import { blue } from "@mui/material/colors";
 import OurProces from "../MUI/OurProces";
@@ -60,41 +68,57 @@ import { Autoplay, Pagination } from "swiper/modules";
 const CardData = [
   {
     id: 1,
-    image:
-      "https://cdn130.picsart.com/289328266010211.png?to=crop&type=webp&r=1456x712&q=85",
-    cardName: "Pizza",
+    image: Hire_and_Taxi,
+    cardName: "Tours & Hires",
     carSubName: "BBQ",
     price: "1800",
   },
   {
     id: 2,
-    image:
-      "https://cdn130.picsart.com/289328266010211.png?to=crop&type=webp&r=1456x712&q=85",
-    cardName: "Pizza",
+    image: Diving,
+    cardName: "Diving",
     carSubName: "Hot and spyce",
     price: "2000",
   },
   {
     id: 3,
-    image:
-      "https://cdn130.picsart.com/289328266010211.png?to=crop&type=webp&r=1456x712&q=85",
-    cardName: "Pizza",
+    image: Whale_Watching,
+    cardName: "Whale Watching",
     carSubName: "tandoori chicken ",
     price: "2500",
   },
   {
     id: 4,
-    image:
-      "https://cdn130.picsart.com/289328266010211.png?to=crop&type=webp&r=1456x712&q=85",
-    cardName: "Pizza",
+    image: Vehicle_Rent,
+    cardName: "Vehicle Rent",
     carSubName: "cheese",
     price: "3000",
   },
   {
     id: 5,
-    image:
-      "https://cdn130.picsart.com/289328266010211.png?to=crop&type=webp&r=1456x712&q=85",
-    cardName: "Pizza",
+    image: Mobile_Topups,
+    cardName: "Mobile topups & Sim cards",
+    carSubName: "cheese",
+    price: "3000",
+  },
+  {
+    id: 6,
+    image: Restaurants,
+    cardName: "Restaurants",
+    carSubName: "tandoori chicken ",
+    price: "2500",
+  },
+  {
+    id: 7,
+    image: Massaging_Spa,
+    cardName: "Massaging & Spa",
+    carSubName: "cheese",
+    price: "3000",
+  },
+  {
+    id: 8,
+    image: Surfing,
+    cardName: "Surfing",
     carSubName: "cheese",
     price: "3000",
   },
@@ -157,6 +181,7 @@ export default function Dashbord() {
             border: "transparent",
           }}
         >
+          <CardActionArea>
           <Card
             sx={{
               Width: 325,
@@ -166,7 +191,34 @@ export default function Dashbord() {
               border: "1px solid rgba(0, 0, 0, 0.2)",
             }}
             // elevation={5}
-          ></Card>
+          >
+            <img
+              alt=""
+              src={item.image}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover", // or "contain" based on your requirement
+              }}
+            />
+             <Box
+            sx={{
+              position: "absolute",
+              bottom: 0,
+              width: "100%",
+              color: "white",
+              backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent background for text readability
+              padding: "10px",
+              textAlign: "center",
+              borderRadius:10
+            }}
+          >
+            <Typography variant="h6">{item.cardName}</Typography>
+            {/* <Typography variant="body2">{item.carSubName}</Typography>
+            <Typography variant="body2">Price: ${item.price}</Typography> */}
+          </Box>
+          </Card>
+          </CardActionArea>
         </Box>
       </Grid>
     </SwiperSlide>
@@ -429,13 +481,22 @@ export default function Dashbord() {
         </Typography>
         <br />
         <br />
-        <h5>Mirissa (Sinhala: මිරිස්ස, romanized: Mirissa; Tamil: மிரிஸ்ஸ, romanized: Miris'sa) is a small town on the south coast of Sri Lanka, located in the Matara District of the Southern Province. It is approximately 150 kilometres (93 mi) south of Colombo and is situated at an elevation of 4 metres (13 ft) above sea level. Mirissa's beach and nightlife make it a popular tourist destination. It is also a fishing port and one of the island's main whale and dolphin watching locations.</h5>
+        <h5>
+          Mirissa (Sinhala: මිරිස්ස, romanized: Mirissa; Tamil: மிரிஸ்ஸ,
+          romanized: Miris'sa) is a small town on the south coast of Sri Lanka,
+          located in the Matara District of the Southern Province. It is
+          approximately 150 kilometres (93 mi) south of Colombo and is situated
+          at an elevation of 4 metres (13 ft) above sea level. Mirissa's beach
+          and nightlife make it a popular tourist destination. It is also a
+          fishing port and one of the island's main whale and dolphin watching
+          locations.
+        </h5>
 
         <br />
         <br />
         <br />
         <br />
-        <br /> 
+        <br />
 
         {/* NUTRITION MEAL PLANS  */}
         {/* /******* card*/}
