@@ -14,6 +14,13 @@ import {
   IconButton,
   ImageList,
   ImageListItem,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
   Tooltip,
   Typography,
 } from "@mui/material";
@@ -64,6 +71,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
+import MataraToKadavatha from "../MUI/MataraToKadavatha";
 
 const CardData = [
   {
@@ -124,47 +132,6 @@ const CardData = [
   },
 ];
 
-// const itemData = [
-//   {
-//     img: P1,
-//     title: "Set Your Goal",
-//   },
-//   {
-//     img: P2,
-//     title: "Select Your Meal",
-//   },
-//   {
-//     img: P3,
-//     title: "Enter Your Information",
-//   },
-//   {
-//     img: P4,
-//     title: "place Your Order",
-//   },
-//   {
-//     img: P5,
-//     title: "We Process and Deliver Your Order",
-//   },
-//   {
-//     img: P6,
-//     title: "Enjoy Your Meals",
-//   },
-// ];
-// const NutritionistData = [
-//   {
-//     img: NS,
-//     title: "MySelf",
-//   },
-//   {
-//     img: NC,
-//     title: "Children",
-//   },
-//   {
-//     img: NF,
-//     title: "Family",
-//   },
-// ];
-
 export default function Dashbord() {
   const theme = useTheme();
 
@@ -182,42 +149,42 @@ export default function Dashbord() {
           }}
         >
           <CardActionArea>
-          <Card
-            sx={{
-              Width: 325,
-              height: 320,
-              borderRadius: 6,
-              backgroundColor: "rgba(127, 235, 170, 0.3)",
-              border: "1px solid rgba(0, 0, 0, 0.2)",
-            }}
-            // elevation={5}
-          >
-            <img
-              alt=""
-              src={item.image}
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover", // or "contain" based on your requirement
+            <Card
+              sx={{
+                Width: 325,
+                height: 320,
+                borderRadius: 6,
+                backgroundColor: "rgba(127, 235, 170, 0.3)",
+                border: "1px solid rgba(0, 0, 0, 0.2)",
               }}
-            />
-             <Box
-            sx={{
-              position: "absolute",
-              bottom: 0,
-              width: "100%",
-              color: "white",
-              backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent background for text readability
-              padding: "10px",
-              textAlign: "center",
-              borderRadius:10
-            }}
-          >
-            <Typography variant="h6">{item.cardName}</Typography>
-            {/* <Typography variant="body2">{item.carSubName}</Typography>
+              // elevation={5}
+            >
+              <img
+                alt=""
+                src={item.image}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover", // or "contain" based on your requirement
+                }}
+              />
+              <Box
+                sx={{
+                  position: "absolute",
+                  bottom: 0,
+                  width: "100%",
+                  color: "white",
+                  backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent background for text readability
+                  padding: "10px",
+                  textAlign: "center",
+                  borderRadius: 10,
+                }}
+              >
+                <Typography variant="h6">{item.cardName}</Typography>
+                {/* <Typography variant="body2">{item.carSubName}</Typography>
             <Typography variant="body2">Price: ${item.price}</Typography> */}
-          </Box>
-          </Card>
+              </Box>
+            </Card>
           </CardActionArea>
         </Box>
       </Grid>
@@ -293,114 +260,6 @@ export default function Dashbord() {
       </Card>
     </Grid>
   );
-  // const NutritionistCard = (item, key) => (
-  //   <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={4}>
-  //     <Card
-  //       className="nutritionMeal-card"
-  //       sx={{
-  //         Width: 345,
-  //         height: 330,
-  //         borderRadius: 6,
-  //         // backgroundColor: "rgba(197, 235, 170, 0.1)",
-  //         // border: "1px solid rgba(0, 0, 0, 0.1)",
-  //       }}
-  //       elevation={0}
-  //     >
-  //       <Box
-  //         sx={{ height: 280, padding: 2, position: "relative" }}
-  //         // onClick={() => {
-  //         //   navigate(`/DigiBill/${item.card_id}`);
-  //         // }}
-  //       >
-  //         <CardHeader
-  //           sx={{
-  //             flexDirection: "column",
-  //             justifyContent: "center",
-  //             textAlign: "center",
-  //             height: 80,
-  //             overflow: "hidden",
-  //           }}
-  //           title={
-  //             <Typography
-  //               className="nutritionMeal-card-title"
-  //               gutterBottom
-  //               variant="h4"
-  //               component="h2"
-  //             >
-  //               {item.title}
-  //             </Typography>
-  //           }
-  //         />
-  //         <CardActionArea>
-  //           <Box
-  //             sx={{
-  //               // backgroundColor: "rgba(255, 255, 255, 0.8)",
-  //               height: 180,
-  //               display: "flex",
-  //               justifyContent: "center",
-  //               alignItems: "center",
-  //               borderRadius: 5,
-  //             }}
-  //           >
-  //             <img
-  //               src={item.img}
-  //               className="nutritionMeal-card-img"
-  //               height="auto"
-  //               width="300px"
-  //               style={{ borderRadius: "10px" }}
-  //               alt=""
-  //             />
-  //             {/* <div className="overlay"></div> */}
-  //             <Typography
-  //               variant="h3"
-  //               className="img-title"
-  //               style={{
-  //                 position: "absolute",
-  //                 top: "50%",
-  //                 left: "50%",
-  //                 transform: "translate(-50%, -50%)",
-  //                 color: "rgb(18, 104, 18)",
-  //                 // backgroundColor:"black",
-  //                 fontWeight: "bold",
-  //               }}
-  //             >
-  //               {item.title}
-  //             </Typography>
-  //           </Box>
-  //         </CardActionArea>
-  //       </Box>
-  //     </Card>
-  //   </Grid>
-  // );
-
-  // const HealthGoals = (item, key) => (
-  //   <Grid key={Key} item xs={12} sm={12} md={6} lg={6} xl={6}>
-  //     <Card sx={{ display: "flex", Width: 345, height: 280, borderRadius: 6 }}>
-  //       <Box sx={{ display: "flex", flexDirection: "column" }}>
-  //         <CardContent sx={{ flex: "1 0 auto" }}>
-  //           <Typography component="div" variant="h5">
-  //             WEIGHT LOSS
-  //           </Typography>
-  //           <Typography
-  //             variant="subtitle1"
-  //             color="text.secondary"
-  //             component="div"
-  //           >
-  //             Forget starving yourself to lose weight. Let us introduce you to a
-  //             healthy regime where you make smart food choices without having to
-  //             skip them to lose weight.
-  //           </Typography>
-  //         </CardContent>
-  //       </Box>
-  //       <CardMedia
-  //         component="img"
-  //         sx={{ width: 180 }}
-  //         image="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-  //         alt="Live from space album cover"
-  //       />
-  //     </Card>
-  //   </Grid>;
-  // );
 
   return (
     <>
@@ -498,13 +357,6 @@ export default function Dashbord() {
         <br />
         <br />
 
-        {/* NUTRITION MEAL PLANS  */}
-        {/* /******* card*/}
-
-        {/* <Grid container spacing={2} marginTop={3} marginBottom={3}>
-          {CardData.map((card, key) => cardData(card, key))}
-        </Grid> */}
-
         <Typography
           variant="h2"
           align="center"
@@ -562,6 +414,85 @@ export default function Dashbord() {
 
         <br />
         <br />
+        <br />
+        <br />
+        <br />
+
+        <Typography
+          variant="h2"
+          align="center"
+          gutterBottom
+          sx={{
+            fontWeight: "bold",
+            fontFamily: "Cormorant Garamond, serif",
+            color: "rgb(18, 104, 18)",
+            textShadow: "2px 45px 4px rgba(18,104,18,0.1)",
+          }}
+        >
+          EXPRESSWAY BUS SERVICE
+        </Typography>
+        <br />
+        <br />
+        <Grid container spacing={1} marginTop={3} marginBottom={3}>
+        <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
+        <Box
+          sx={{
+            Width: 145,
+            height: 1350,
+            backgroundColor: "transparent",
+            // borderRadius: 6,
+            // backgroundColor: "rgba(197, 235, 170, 0.1)",
+            border: "transparent",
+          }}
+        >
+          {/* <CardActionArea sx={{borderRadius: 6,}}> */}
+            <Card
+              sx={{
+                maxWidth: 395,
+                height: 1325,
+                borderRadius: 6,
+                backgroundColor: "rgba(127, 235, 170, 0.3)",
+                border: "1px solid rgba(0, 0, 0, 0.2)",
+              }}
+              // elevation={5}
+            >
+              <MataraToKadavatha/>
+             
+            </Card>
+          {/* </CardActionArea> */}
+        </Box>
+      </Grid>
+      <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
+        <Box
+          sx={{
+            Width: 145,
+            height: 1350,
+            backgroundColor: "transparent",
+            // borderRadius: 6,
+            // backgroundColor: "rgba(197, 235, 170, 0.1)",
+            border: "transparent",
+          }}
+        >
+          {/* <CardActionArea sx={{borderRadius: 6,}}> */}
+            <Card
+              sx={{
+                maxWidth: 395,
+                height: 1325,
+                borderRadius: 6,
+                backgroundColor: "rgba(127, 235, 170, 0.3)",
+                border: "1px solid rgba(0, 0, 0, 0.2)",
+              }}
+              // elevation={5}
+            >
+              <MataraToKadavatha/>
+             
+            </Card>
+          {/* </CardActionArea> */}
+        </Box>
+      </Grid>
+        
+            
+        </Grid>
         <br />
         <br />
       </Container>

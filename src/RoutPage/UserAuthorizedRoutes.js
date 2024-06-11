@@ -10,6 +10,7 @@ import Profile from "../Pages/Profile";
 import SingUp from "../Pages/SingUp";
 import SingUpOTP from "../Pages/SingUpOTP";
 import AddFamilyMembers from "../Pages/AddFamilyMembers";
+import ToursAndHires from "../Pages/ToursAndHires";
 // import Dashbord from "../Pages/Dashbord";
 
 
@@ -27,10 +28,10 @@ const UserAuthorizedRoutes = [
         path: "/",
         element: <Dashbord />,
       },
-      // {
-      //   path: "/Tours_&_Hires",
-      //   element: <Plans_and_Diets/>,
-      // },
+      {
+        path: "/ToursAndHires",
+        element: <ToursAndHires/>,
+      },
       // {
       //   path:"/Whale_Watching",
       //   element:<Custom_Meals/> 

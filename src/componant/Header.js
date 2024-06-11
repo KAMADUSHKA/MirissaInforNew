@@ -101,7 +101,7 @@ export default function Header() {
                   onClick={() => {
                     handleCloseNavMenu(); 
                     if (page === "Tours & Hires") {
-                      window.location.href = "/"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                      window.location.href = "/ToursAndHires"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
                     if (page === "Whale Watching") {
                       window.location.href = "/Plans_and_Diets"; // Navigate to "/Plans_and_Diets" for the "Blog" button
@@ -149,7 +149,7 @@ export default function Header() {
                 onClick={() => {
                   handleCloseNavMenu(); // Close the navigation menu
                   if (page === "Tours & Hires") {
-                    window.location.href = "/"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                    window.location.href = "/ToursAndHires"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
                   if (page === "Whale Watching") {
                     window.location.href = "/Plans_and_Diets"; // Navigate to "/Plans_and_Diets" for the "Blog" button
