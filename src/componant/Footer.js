@@ -22,6 +22,7 @@ import {
   AiOutlineTwitter,
   AiFillFacebook,
 } from "react-icons/ai";
+import LOGO from "../Image/LOGO11.jpg"
 
 // const pages = ["Products", "Pricing", "Blog"];
 // const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -68,7 +69,7 @@ export default function Footer() {
                         <IconButton sx={{ p: 0 }}>
                           <Avatar
                             alt="Remy Sharp"
-                            src="https://dsuabgmmtxmj1.cloudfront.net/companyweb/adeona_new_logo_circle.png"
+                            src={LOGO}
                           />
                         </IconButton>
                       </Tooltip>

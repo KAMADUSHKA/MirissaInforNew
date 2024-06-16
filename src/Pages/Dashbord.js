@@ -72,6 +72,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
 import MataraToKadavatha from "../MUI/MataraToKadavatha";
+import KadawathaToMatara from "../MUI/KadawathaToMatara";
 
 const CardData = [
   {
@@ -438,7 +439,7 @@ export default function Dashbord() {
         <Box
           sx={{
             Width: 145,
-            height: 1350,
+            height: 1380,
             backgroundColor: "transparent",
             // borderRadius: 6,
             // backgroundColor: "rgba(197, 235, 170, 0.1)",
@@ -449,10 +450,11 @@ export default function Dashbord() {
             <Card
               sx={{
                 maxWidth: 395,
-                height: 1325,
+                height: 1380,
                 borderRadius: 6,
                 backgroundColor: "rgba(127, 235, 170, 0.3)",
                 border: "1px solid rgba(0, 0, 0, 0.2)",
+                
               }}
               // elevation={5}
             >
@@ -466,7 +468,7 @@ export default function Dashbord() {
         <Box
           sx={{
             Width: 145,
-            height: 1350,
+            height: 1380,
             backgroundColor: "transparent",
             // borderRadius: 6,
             // backgroundColor: "rgba(197, 235, 170, 0.1)",
@@ -477,14 +479,14 @@ export default function Dashbord() {
             <Card
               sx={{
                 maxWidth: 395,
-                height: 1325,
+                height: 1380,
                 borderRadius: 6,
                 backgroundColor: "rgba(127, 235, 170, 0.3)",
                 border: "1px solid rgba(0, 0, 0, 0.2)",
               }}
               // elevation={5}
             >
-              <MataraToKadavatha/>
+              <KadawathaToMatara/>
              
             </Card>
           {/* </CardActionArea> */}
