@@ -133,6 +133,25 @@ const CardData = [
   },
 ];
 
+const mainSlider = [
+  {
+    id: 1,
+    img: C1,
+  },
+  {
+    id: 2,
+    img: C2,
+  },
+  {
+    id: 3,
+    img: C3,
+  },
+  {
+    id: 4,
+    img: C4,
+  },
+];
+
 export default function Dashbord() {
   const theme = useTheme();
 
@@ -262,9 +281,75 @@ export default function Dashbord() {
     </Grid>
   );
 
+  const mainSwiper = (item, Key) => (
+    <SwiperSlide>
+      <Grid key={Key} item xs={12} sm={12} md={12} lg={12} xl={12}>
+        <Box
+          sx={{
+            Width: 345,
+            height: 380,
+            backgroundColor: "transparent",
+            // borderRadius: 6,
+            // backgroundColor: "red",
+            border: "transparent",
+            marginTop: 2,
+          }}
+        >
+          <Card
+            sx={{
+              Width: 325,
+              height: 360,
+              borderRadius: 6,
+              backgroundColor: "rgba(127, 235, 170, 0.3)",
+              border: "1px solid rgba(0, 0, 0, 0.2)",
+              marginLeft: 1,
+              marginRight: 1,
+            }}
+            // elevation={5}
+          >
+            <img
+              alt=""
+              src={item.img}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover", // or "contain" based on your requirement
+              }}
+            />
+          </Card>
+          <Box
+            style={{
+              position: "absolute",
+              bottom: 0,
+              width: "100%",
+              height: "15px", // height of the pink line
+              backgroundColor: "#be43fb",
+              // borderBottomLeftRadius: "6px",  // same border radius as the card
+              // borderBottomRightRadius: "6px",  // same border radius as the card
+            }}
+          />
+        </Box>
+      </Grid>
+    </SwiperSlide>
+  );
+
   return (
     <>
-      <Box
+      <Swiper
+        className="mySwiper"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        modules={[Autoplay]}
+      >
+        <Grid container spacing={0} marginTop={3} marginBottom={3}>
+          {mainSlider.map((card, key) => mainSwiper(card, key))}
+          {/* {CardData.map((card, key) => swiperCard(card, key))} */}
+        </Grid>
+      </Swiper>
+      {/* <Box
         sx={{
           padding: { xs: 2, lg: 12 },
           display: "flex",
@@ -272,7 +357,6 @@ export default function Dashbord() {
           alignItems: "center",
         }}
       >
-        {/* <Carousel className="main-slide" showThumbs={false} showStatus={false} style={{ maxWidth: '60%' }}> */}
         <Carousel
           className="main-slide"
           autoPlay={true}
@@ -283,43 +367,19 @@ export default function Dashbord() {
           // dotColor="rgba(0, 255, 0)"
         >
           <div>
-            <img
-              src={C1}
-              // src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              // height="auto"
-              width="200px"
-              alt=""
-            />
+            <img src={C1} width="200px" alt="" />
           </div>
           <div>
-            <img
-              src={C2}
-              // src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              // height="auto"
-              width="200px"
-              alt=""
-            />
+            <img src={C2} width="200px" alt="" />
           </div>
           <div>
-            <img
-              src={C3}
-              // src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              // height="auto"
-              width="200px"
-              alt=""
-            />
+            <img src={C3} width="200px" alt="" />
           </div>
           <div>
-            <img
-              src={C4}
-              // src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              // height="auto"
-              width="200px"
-              alt=""
-            />
+            <img src={C4} width="200px" alt="" />
           </div>
         </Carousel>
-      </Box>
+      </Box> */}
 
       <br />
       <br />
@@ -435,65 +495,60 @@ export default function Dashbord() {
         <br />
         <br />
         <Grid container spacing={1} marginTop={3} marginBottom={3}>
-        <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
-        <Box
-          sx={{
-            Width: 145,
-            height: 1380,
-            backgroundColor: "transparent",
-            // borderRadius: 6,
-            // backgroundColor: "rgba(197, 235, 170, 0.1)",
-            border: "transparent",
-          }}
-        >
-          {/* <CardActionArea sx={{borderRadius: 6,}}> */}
-            <Card
+          <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
+            <Box
               sx={{
-                maxWidth: 395,
+                Width: 145,
                 height: 1380,
-                borderRadius: 6,
-                backgroundColor: "rgba(127, 235, 170, 0.3)",
-                border: "1px solid rgba(0, 0, 0, 0.2)",
-                
+                backgroundColor: "transparent",
+                // borderRadius: 6,
+                // backgroundColor: "rgba(197, 235, 170, 0.1)",
+                border: "transparent",
               }}
-              // elevation={5}
             >
-              <MataraToKadavatha/>
-             
-            </Card>
-          {/* </CardActionArea> */}
-        </Box>
-      </Grid>
-      <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
-        <Box
-          sx={{
-            Width: 145,
-            height: 1380,
-            backgroundColor: "transparent",
-            // borderRadius: 6,
-            // backgroundColor: "rgba(197, 235, 170, 0.1)",
-            border: "transparent",
-          }}
-        >
-          {/* <CardActionArea sx={{borderRadius: 6,}}> */}
-            <Card
+              {/* <CardActionArea sx={{borderRadius: 6,}}> */}
+              <Card
+                sx={{
+                  maxWidth: 395,
+                  height: 1380,
+                  borderRadius: 6,
+                  backgroundColor: "rgba(127, 235, 170, 0.3)",
+                  border: "1px solid rgba(0, 0, 0, 0.2)",
+                }}
+                // elevation={5}
+              >
+                <MataraToKadavatha />
+              </Card>
+              {/* </CardActionArea> */}
+            </Box>
+          </Grid>
+          <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
+            <Box
               sx={{
-                maxWidth: 395,
+                Width: 145,
                 height: 1380,
-                borderRadius: 6,
-                backgroundColor: "rgba(127, 235, 170, 0.3)",
-                border: "1px solid rgba(0, 0, 0, 0.2)",
+                backgroundColor: "transparent",
+                // borderRadius: 6,
+                // backgroundColor: "rgba(197, 235, 170, 0.1)",
+                border: "transparent",
               }}
-              // elevation={5}
             >
-              <KadawathaToMatara/>
-             
-            </Card>
-          {/* </CardActionArea> */}
-        </Box>
-      </Grid>
-        
-            
+              {/* <CardActionArea sx={{borderRadius: 6,}}> */}
+              <Card
+                sx={{
+                  maxWidth: 395,
+                  height: 1380,
+                  borderRadius: 6,
+                  backgroundColor: "rgba(127, 235, 170, 0.3)",
+                  border: "1px solid rgba(0, 0, 0, 0.2)",
+                }}
+                // elevation={5}
+              >
+                <KadawathaToMatara />
+              </Card>
+              {/* </CardActionArea> */}
+            </Box>
+          </Grid>
         </Grid>
         <br />
         <br />
