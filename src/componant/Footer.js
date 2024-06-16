@@ -48,7 +48,9 @@ export default function Footer() {
 
   return (
     <>
-      <AppBar position="static" sx={{ backgroundColor: "rgb(18, 104, 18)" }}>
+      {/* <AppBar position="static" sx={{ backgroundColor: "rgb(18, 104, 18)" }}> */}
+      <AppBar position="static" sx={{ backgroundColor: "rgb(0, 0, 0)" }}>
+      
         <Container maxWidth="xl">
           <Toolbar disableGutters sx={{ marginBottom: 2 }}>
             {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -87,7 +89,7 @@ export default function Footer() {
                         fontFamily: "monospace",
                         fontWeight: 700,
                         letterSpacing: ".3rem",
-                        color: "inherit",
+                        color: "#be43fb",
                         textDecoration: "none",
                       }}
                     >
@@ -110,7 +112,7 @@ export default function Footer() {
                             fontFamily: "monospace",
                             fontWeight: 700,
                             letterSpacing: ".0.5rem",
-                            color: "inherit",
+                            color: "#be43fb",
                             textDecoration: "none",
                           }}
                         >
@@ -129,7 +131,7 @@ export default function Footer() {
                             fontFamily: "monospace",
                             fontWeight: 700,
                             letterSpacing: ".0.5rem",
-                            color: "inherit",
+                            color: "#be43fb",
                             textDecoration: "none",
                             marginLeft: 0,
                           }}
@@ -164,7 +166,7 @@ export default function Footer() {
                       fontFamily: "monospace",
                       fontWeight: 700,
                       letterSpacing: "0.1rem",
-                      color: "inherit",
+                      color: "#be43fb",
                       textDecoration: "none",
                       marginLeft: 0,
                       fontSize: 12,
@@ -196,7 +198,7 @@ export default function Footer() {
                       fontFamily: "monospace",
                       fontWeight: 700,
                       letterSpacing: ".0.5rem",
-                      color: "inherit",
+                      color: "#be43fb",
                       textDecoration: "none",
                       marginLeft: 0,
                     }}
@@ -216,7 +218,7 @@ export default function Footer() {
                       fontFamily: "monospace",
                       fontWeight: 700,
                       letterSpacing: ".0.5rem",
-                      color: "inherit",
+                      color: "#be43fb",
                       textDecoration: "none",
                       marginLeft: 0,
                     }}

@@ -44,7 +44,8 @@ export default function Header() {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor:"rgb(18, 104, 18)"}}>
+    // <AppBar position="static" sx={{backgroundColor:"rgb(18, 104, 18)"}}>
+       <AppBar position="static" sx={{backgroundColor:"rgb(0, 0, 0)"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", lg: "flex" }, mr: 1 }} /> */}
@@ -61,7 +62,7 @@ export default function Header() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "#be43fb",
               textDecoration: "none",
             }}
           >
@@ -75,9 +76,9 @@ export default function Header() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color= "#be43fb"
             >
-              <MenuIcon />
+              <MenuIcon sx={{color:"#be43fb"}} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -118,8 +119,9 @@ export default function Header() {
                       window.location.href = "/Channel_Nutritionist"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
                   }}
+                  sx={{backgroundColor:"rgb(0, 0, 0)"}}
                 >
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" sx={{color:"#be43fb"}}>{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -139,7 +141,7 @@ export default function Header() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "#be43fb",
               textDecoration: "none",
             }}
           >
@@ -167,7 +169,7 @@ export default function Header() {
                     window.location.href = "/Channel_Nutritionist"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
                 }}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "#be43fb", display: "block", }}
               >
                 {page}
               </Button>
@@ -175,7 +177,7 @@ export default function Header() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            {/* <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg&ga=GA1.1.972764281.1692088791&semt=ais" />
               </IconButton>
@@ -210,7 +212,7 @@ export default function Header() {
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
+            </Menu> */}
           </Box>
         </Toolbar>
       </Container>
