@@ -14,6 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import BeachAccessIcon from "@mui/icons-material/BeachAccess";
 import LOGO from "../Image/LOGO11.jpg";
+import CallIcon from "@mui/icons-material/Call";
 
 const pages = [
   "Tours & Hires",
@@ -54,7 +55,8 @@ export default function Header() {
             alt="Remy Sharp"
             src={LOGO}
             sx={{ display: { xs: "none", lg: "flex" } }}
-          />&nbsp;
+          />
+          &nbsp;
           <Typography
             variant="h6"
             noWrap
@@ -70,10 +72,8 @@ export default function Header() {
               textDecoration: "none",
             }}
           >
-           
-             Mirissa Info
+            Mirissa Info
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", lg: "none" } }}>
             <IconButton
               size="large"
@@ -191,7 +191,7 @@ export default function Header() {
                   "&:hover": {
                     backgroundColor: "#be43fb",
                     color: "black",
-                    fontWeight:"bold"
+                    fontWeight: "bold",
                   },
                 }}
               >
@@ -199,24 +199,25 @@ export default function Header() {
               </Button>
             ))}
           </Box>
-
-          <Box sx={{ display: { xs: "none", lg: "flex" },}}>
-        <Typography
-          variant="body1"
-          sx={{
-            color: "#be43fb",
-            fontFamily: "monospace",
-            fontWeight: 700,
-            // backgroundColor: "rgba(255, 255, 255, 0.1)", // Background color with some transparency
-            padding: "5px 10px", // Padding inside the box
-            border: "1px solid #be43fb", // Border color and width
-            borderRadius: "5px", // Rounded corners
-            
-          }}
-        >
-          Contact:+9477 123 1212
-        </Typography>
-      </Box>
+          <Box
+            sx={{color:"#be43fb" ,display: { xs: "none", lg: "flex" }, padding: "5px 10px",border: "1px solid #be43fb",borderRadius: "5px", }}
+          >
+            <CallIcon />
+            &nbsp;&nbsp;
+            <Typography
+              variant="body1"
+              sx={{
+                color: "#be43fb",
+                fontFamily: "monospace",
+                fontWeight: 700,
+                // Padding inside the box
+                 // Border color and width
+                 // Rounded corners
+              }}
+            >
+             : +94771231212
+            </Typography>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
