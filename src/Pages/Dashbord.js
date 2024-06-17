@@ -289,14 +289,14 @@ export default function Dashbord() {
             Width: 345,
             // height: 460,
             height: {
-              xs: 280, // default height for xs, sm, and md sizes
-              md: 560, // height for md size and up
+              xs: 220, // default height for xs, sm, and md sizes
+              md: 520, // height for md size and up
               lg: 620, // height for lg size and up
               xl: 720, // height for xl size and up
             },
-            // backgroundColor: "transparent",
+            backgroundColor: "transparent",
             // borderRadius: 6,
-            backgroundColor: "red",
+            // backgroundColor: "red",
             border: "transparent",
             marginTop: 2,
           }}
@@ -306,8 +306,8 @@ export default function Dashbord() {
               Width: 325,
               // height:440,
               height: {
-                xs: 260, // default height for xs, sm, and md sizes
-                md: 540, // height for md size and up
+                xs: 200, // default height for xs, sm, and md sizes
+                md: 500, // height for md size and up
                 lg: 600, // height for lg size and up
                 xl: 700, // height for xl size and up
               },
@@ -362,40 +362,6 @@ export default function Dashbord() {
           {/* {CardData.map((card, key) => swiperCard(card, key))} */}
         </Grid>
       </Swiper>
-      {/* <Box
-        sx={{
-          padding: { xs: 2, lg: 12 },
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Carousel
-          className="main-slide"
-          autoPlay={true}
-          infiniteLoop={true}
-          showThumbs={false}
-          showStatus={false}
-
-          // dotColor="rgba(0, 255, 0)"
-        >
-          <div>
-            <img src={C1} width="200px" alt="" />
-          </div>
-          <div>
-            <img src={C2} width="200px" alt="" />
-          </div>
-          <div>
-            <img src={C3} width="200px" alt="" />
-          </div>
-          <div>
-            <img src={C4} width="200px" alt="" />
-          </div>
-        </Carousel>
-      </Box> */}
-
-      <br />
-      <br />
       <Container>
         {/* OUR PROCESS  */}
 
@@ -412,9 +378,8 @@ export default function Dashbord() {
         >
           MIRISSA
         </Typography>
-        <br />
-        <br />
-        <h5>
+      
+        <Typography >
           Mirissa is a small town on the south coast of Sri Lanka,
           located in the Matara District of the Southern Province. It is
           approximately 150 kilometres (93 mi) south of Colombo and is situated
@@ -422,7 +387,7 @@ export default function Dashbord() {
           and nightlife make it a popular tourist destination. It is also a
           fishing port and one of the island's main whale and dolphin watching
           locations.
-        </h5>
+        </Typography>
 
         <br />
         <br />
