@@ -162,9 +162,9 @@ export default function Dashbord() {
           sx={{
             Width: 345,
             height: 350,
-            backgroundColor: "transparent",
+            // backgroundColor: "transparent",
             // borderRadius: 6,
-            // backgroundColor: "rgba(197, 235, 170, 0.1)",
+            backgroundColor: "rgba(197, 235, 170, 0.1)",
             border: "transparent",
           }}
         >
@@ -287,7 +287,13 @@ export default function Dashbord() {
         <Box
           sx={{
             Width: 345,
-            height: 380,
+            // height: 460,
+            height: {
+              xs: 440, // default height for xs, sm, and md sizes
+              md: 560, // height for md size and up
+              lg: 620, // height for lg size and up
+              xl: 720, // height for xl size and up
+            },
             backgroundColor: "transparent",
             // borderRadius: 6,
             // backgroundColor: "red",
@@ -298,7 +304,13 @@ export default function Dashbord() {
           <Card
             sx={{
               Width: 325,
-              height: 360,
+              // height:440,
+              height: {
+                xs: 420, // default height for xs, sm, and md sizes
+                md: 540, // height for md size and up
+                lg: 600, // height for lg size and up
+                xl: 700, // height for xl size and up
+              },
               borderRadius: 6,
               backgroundColor: "rgba(127, 235, 170, 0.3)",
               border: "1px solid rgba(0, 0, 0, 0.2)",
@@ -313,7 +325,8 @@ export default function Dashbord() {
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover", // or "contain" based on your requirement
+                objectFit: "cover",
+                borderRadius: 'inherit' 
               }}
             />
           </Card>
