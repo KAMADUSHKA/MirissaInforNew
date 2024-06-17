@@ -289,14 +289,14 @@ export default function Dashbord() {
             Width: 345,
             // height: 460,
             height: {
-              xs: 440, // default height for xs, sm, and md sizes
+              xs: 380, // default height for xs, sm, and md sizes
               md: 560, // height for md size and up
               lg: 620, // height for lg size and up
               xl: 720, // height for xl size and up
             },
-            backgroundColor: "transparent",
+            // backgroundColor: "transparent",
             // borderRadius: 6,
-            // backgroundColor: "red",
+            backgroundColor: "red",
             border: "transparent",
             marginTop: 2,
           }}
@@ -306,7 +306,7 @@ export default function Dashbord() {
               Width: 325,
               // height:440,
               height: {
-                xs: 420, // default height for xs, sm, and md sizes
+                xs: 360, // default height for xs, sm, and md sizes
                 md: 540, // height for md size and up
                 lg: 600, // height for lg size and up
                 xl: 700, // height for xl size and up
@@ -406,7 +406,7 @@ export default function Dashbord() {
           sx={{
             fontWeight: "bold",
             fontFamily: "Cormorant Garamond, serif",
-            color: "rgb(18, 104, 18)",
+            color: "#be43fb",
             textShadow: "2px 45px 4px rgba(18,104,18,0.1)",
           }}
         >
@@ -415,8 +415,7 @@ export default function Dashbord() {
         <br />
         <br />
         <h5>
-          Mirissa (Sinhala: මිරිස්ස, romanized: Mirissa; Tamil: மிரிஸ்ஸ,
-          romanized: Miris'sa) is a small town on the south coast of Sri Lanka,
+          Mirissa is a small town on the south coast of Sri Lanka,
           located in the Matara District of the Southern Province. It is
           approximately 150 kilometres (93 mi) south of Colombo and is situated
           at an elevation of 4 metres (13 ft) above sea level. Mirissa's beach
