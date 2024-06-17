@@ -289,7 +289,7 @@ export default function Dashbord() {
             Width: 345,
             // height: 460,
             height: {
-              xs: 380, // default height for xs, sm, and md sizes
+              xs: 280, // default height for xs, sm, and md sizes
               md: 560, // height for md size and up
               lg: 620, // height for lg size and up
               xl: 720, // height for xl size and up
@@ -306,7 +306,7 @@ export default function Dashbord() {
               Width: 325,
               // height:440,
               height: {
-                xs: 360, // default height for xs, sm, and md sizes
+                xs: 260, // default height for xs, sm, and md sizes
                 md: 540, // height for md size and up
                 lg: 600, // height for lg size and up
                 xl: 700, // height for xl size and up
@@ -437,7 +437,7 @@ export default function Dashbord() {
           sx={{
             fontWeight: "bold",
             fontFamily: "Cormorant Garamond, serif",
-            color: "rgb(18, 104, 18)",
+            color: "#be43fb",
             textShadow: "2px 45px 4px rgba(18,104,18,0.1)",
           }}
         >
