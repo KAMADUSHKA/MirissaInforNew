@@ -161,7 +161,7 @@ export default function Dashbord() {
         <Box
           sx={{
             Width: 345,
-            height: 350,
+            height: 300,
             // backgroundColor: "transparent",
             // borderRadius: 6,
             backgroundColor: "rgba(197, 235, 170, 0.1)",
@@ -172,7 +172,7 @@ export default function Dashbord() {
             <Card
               sx={{
                 Width: 325,
-                height: 320,
+                height: 300,
                 borderRadius: 6,
                 backgroundColor: "rgba(127, 235, 170, 0.3)",
                 border: "1px solid rgba(0, 0, 0, 0.2)",
