@@ -368,18 +368,18 @@ export default function Dashbord() {
         <Typography
           variant="h2"
           align="center"
-          gutterBottom
+          // gutterBottom
           sx={{
             fontWeight: "bold",
             fontFamily: "Cormorant Garamond, serif",
             color: "#be43fb",
-            textShadow: "2px 45px 4px rgba(18,104,18,0.1)",
+            textShadow: "1px 5px 4px rgba(18,104,18,0.2)",
           }}
         >
           MIRISSA
         </Typography>
       
-        <Typography >
+        <Typography  >
           Mirissa is a small town on the south coast of Sri Lanka,
           located in the Matara District of the Southern Province. It is
           approximately 150 kilometres (93 mi) south of Colombo and is situated
@@ -389,13 +389,7 @@ export default function Dashbord() {
           locations.
         </Typography>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <Typography
+        {/* <Typography
           variant="h2"
           align="center"
           gutterBottom
@@ -408,9 +402,9 @@ export default function Dashbord() {
         >
           CATEGORIES
         </Typography>
-        <br />
+        <br /> */}
 
-        <br />
+        
         <br />
 
         <Swiper
