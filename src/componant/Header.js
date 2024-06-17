@@ -56,7 +56,7 @@ export default function Header() {
             src={LOGO}
             sx={{ display: { xs: "none", lg: "flex" } }}
           />
-          &nbsp;
+          &nbsp;&nbsp;
           <Typography
             variant="h6"
             noWrap
@@ -215,7 +215,7 @@ export default function Header() {
                  // Rounded corners
               }}
             >
-             : +94771231212
+             : +94713321950
             </Typography>
           </Box>
         </Toolbar>
