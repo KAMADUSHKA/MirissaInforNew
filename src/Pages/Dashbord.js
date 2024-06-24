@@ -73,57 +73,58 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import MataraToKadavatha from "../MUI/MataraToKadavatha";
 import KadawathaToMatara from "../MUI/KadawathaToMatara";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const CardData = [
   {
     id: 1,
     image: Hire_and_Taxi,
     cardName: "Tours & Hires",
-    cardRout:"/ToursAndHires"
+    path: '/ToursAndHires',
     
   },
   {
     id: 2,
     image: Diving,
     cardName: "Diving",
+    path: '/ToursAndHires',
    
   },
   {
     id: 3,
     image: Whale_Watching,
     cardName: "Whale Watching",
-   
+    path: '/ToursAndHires',
   },
   {
     id: 4,
     image: Vehicle_Rent,
     cardName: "Vehicle Rent",
-   
+    path: '/ToursAndHires',
   },
   {
     id: 5,
     image: Mobile_Topups,
     cardName: "Mobile topups & Sim cards",
-   
+    path: '/ToursAndHires',
   },
   {
     id: 6,
     image: Restaurants,
     cardName: "Restaurants",
-  
+    path: '/ToursAndHires',
   },
   {
     id: 7,
     image: Massaging_Spa,
     cardName: "Massaging & Spa",
-   
+    path: '/ToursAndHires',
   },
   {
     id: 8,
     image: Surfing,
     cardName: "Surfing",
-   
+    path: '/ToursAndHires',
   },
 ];
 
@@ -149,6 +150,12 @@ const mainSlider = [
 export default function Dashbord() {
   const theme = useTheme();
 
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    navigate(path); // Navigate to the specified path
+  };
+
   const swiperCard = (item, key) => (
     <SwiperSlide>
       <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={3}>
@@ -162,7 +169,7 @@ export default function Dashbord() {
             border: "transparent",
           }}
         >
-          <CardActionArea>
+          <CardActionArea onClick={() => handleClick(item.path)}>
             <Card
               sx={{
                 Width: 325,
@@ -252,7 +259,7 @@ export default function Dashbord() {
           </Box>
         </Box>
         <CardActionArea
-          onClick={() => Navigate(`/DigiBill/${item.id}`)}
+         
         >
           <container>
             <Box
