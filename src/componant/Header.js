@@ -112,16 +112,16 @@ export default function Header() {
                       window.location.href = "/ToursAndHires"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
                     if (page === "Whale Watching") {
-                      window.location.href = "/Plans_and_Diets"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                      window.location.href = "/WhaleWatching"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
                     if (page === "Vehicle Rent") {
-                      window.location.href = "/Custom_Meals"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                      window.location.href = "/VehicleRent"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
                     if (page === "Hotel, Restaurants & Spa") {
-                      window.location.href = "/Quick_Check_Out"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                      window.location.href = "/Restaurants"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
                     if (page === "Surfing") {
-                      window.location.href = "/Channel_Nutritionist"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                      window.location.href = "/Surfing"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
                   }}
                   sx={{ backgroundColor: "rgb(0, 0, 0)" }}
@@ -172,16 +172,16 @@ export default function Header() {
                     window.location.href = "/ToursAndHires"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
                   if (page === "Whale Watching") {
-                    window.location.href = "/Plans_and_Diets"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                    window.location.href = "/WhaleWatching"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
                   if (page === "Vehicle Rent") {
-                    window.location.href = "/Custom_Meals"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                    window.location.href = "/VehicleRent"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
                   if (page === "Hotel, Restaurants & Spa") {
-                    window.location.href = "/Quick_Check_Out"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                    window.location.href = "/Restaurants"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
                   if (page === "Surfing") {
-                    window.location.href = "/Channel_Nutritionist"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                    window.location.href = "/Surfing"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
                 }}
                 sx={{

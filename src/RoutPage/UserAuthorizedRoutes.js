@@ -11,6 +11,13 @@ import SingUp from "../Pages/SingUp";
 import SingUpOTP from "../Pages/SingUpOTP";
 import AddFamilyMembers from "../Pages/AddFamilyMembers";
 import ToursAndHires from "../Pages/ToursAndHires";
+import WhaleWatching from "../Pages/WhaleWatching";
+import Diving from "../Pages/Diving";
+import VehicleRent from "../Pages/VehicleRent";
+import MobileTopup from "../Pages/MobileTopup";
+import Restaurants from "../Pages/Restaurants";
+import MassagingAndSpa from "../Pages/MassagingAndSpa";
+import Surfing from "../Pages/Surfing";
 // import Dashbord from "../Pages/Dashbord";
 
 
@@ -26,27 +33,41 @@ const UserAuthorizedRoutes = [
     children:[
       {
         path: "/",
-        element: <Dashbord />,
+        element: <Dashbord/>,
       },
       {
         path: "/ToursAndHires",
         element: <ToursAndHires/>,
       },
+      {
+        path:"/WhaleWatching",
+        element:<WhaleWatching/> 
+      },
+      {
+        path:"/Diving",
+        element:<Diving/> 
+      },
+      {
+        path:"/VehicleRent",
+        element:<VehicleRent/> 
+      },
+      {
+        path:"/MobileTopup",
+        element:<MobileTopup/> 
+      },
+      {
+        path:"/Restaurants",
+        element:<Restaurants/> 
+      },  {
+        path:"/MassagingAndSpa",
+        element:<MassagingAndSpa/> 
+      },  {
+        path:"/Surfing",
+        element:<Surfing/> 
+      },
       // {
-      //   path:"/Whale_Watching",
-      //   element:<Custom_Meals/> 
-      // },
-      // {
-      //   path:"/Vehicle_Rent",
-      //   element:<Quick_Check_Out/> 
-      // },
-      // {
-      //   path:"/Hotel,_Restaurants_&_Span",
-      //   element:<Channel_Nutritionist/> 
-      // },
-      // {
-      //   path:"/Surfing",
-      //   element:<Channel_Nutritionist/> 
+      //   path:"/MobileTopup",
+      //   element:<MobileTopup/> 
       // },
       {
         path:"/Login",

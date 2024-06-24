@@ -73,63 +73,57 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import MataraToKadavatha from "../MUI/MataraToKadavatha";
 import KadawathaToMatara from "../MUI/KadawathaToMatara";
+import { Navigate } from "react-router-dom";
 
 const CardData = [
   {
     id: 1,
     image: Hire_and_Taxi,
     cardName: "Tours & Hires",
-    carSubName: "BBQ",
-    price: "1800",
+    cardRout:"/ToursAndHires"
+    
   },
   {
     id: 2,
     image: Diving,
     cardName: "Diving",
-    carSubName: "Hot and spyce",
-    price: "2000",
+   
   },
   {
     id: 3,
     image: Whale_Watching,
     cardName: "Whale Watching",
-    carSubName: "tandoori chicken ",
-    price: "2500",
+   
   },
   {
     id: 4,
     image: Vehicle_Rent,
     cardName: "Vehicle Rent",
-    carSubName: "cheese",
-    price: "3000",
+   
   },
   {
     id: 5,
     image: Mobile_Topups,
     cardName: "Mobile topups & Sim cards",
-    carSubName: "cheese",
-    price: "3000",
+   
   },
   {
     id: 6,
     image: Restaurants,
     cardName: "Restaurants",
-    carSubName: "tandoori chicken ",
-    price: "2500",
+  
   },
   {
     id: 7,
     image: Massaging_Spa,
     cardName: "Massaging & Spa",
-    carSubName: "cheese",
-    price: "3000",
+   
   },
   {
     id: 8,
     image: Surfing,
     cardName: "Surfing",
-    carSubName: "cheese",
-    price: "3000",
+   
   },
 ];
 
@@ -257,7 +251,9 @@ export default function Dashbord() {
             <img src={item.image} height="auto" width="200px" />
           </Box>
         </Box>
-        <CardActionArea>
+        <CardActionArea
+          onClick={() => Navigate(`/DigiBill/${item.id}`)}
+        >
           <container>
             <Box
               sx={{
@@ -410,15 +406,15 @@ export default function Dashbord() {
         <Swiper
           // slidesPerView={2}
           spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
           loop={true}
-          modules={[Pagination, Autoplay]}
+          modules={[Autoplay]}
           className="mySwiper"
           breakpoints={{
             // when window width is >= 320px
@@ -447,10 +443,8 @@ export default function Dashbord() {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-
-        <Typography
+       
+        {/* <Typography
           variant="h2"
           align="center"
           gutterBottom
@@ -462,11 +456,11 @@ export default function Dashbord() {
           }}
         >
           EXPRESSWAY BUS SERVICE
-        </Typography>
-        <br />
-        <br />
-        <Grid container spacing={1} marginTop={3} marginBottom={3}>
-          <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
+        </Typography> */}
+        {/* <br /> */}
+        {/* <br /> */}
+        {/* <Grid container spacing={1} marginTop={3} marginBottom={3}> */}
+          {/* <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
             <Box
               sx={{
                 Width: 145,
@@ -477,7 +471,7 @@ export default function Dashbord() {
                 border: "transparent",
               }}
             >
-              {/* <CardActionArea sx={{borderRadius: 6,}}> */}
+              
               <Card
                 sx={{
                   maxWidth: 395,
@@ -490,7 +484,7 @@ export default function Dashbord() {
               >
                 <MataraToKadavatha />
               </Card>
-              {/* </CardActionArea> */}
+              
             </Box>
           </Grid>
           <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
@@ -504,7 +498,7 @@ export default function Dashbord() {
                 border: "transparent",
               }}
             >
-              {/* <CardActionArea sx={{borderRadius: 6,}}> */}
+            
               <Card
                 sx={{
                   maxWidth: 395,
@@ -517,12 +511,11 @@ export default function Dashbord() {
               >
                 <KadawathaToMatara />
               </Card>
-              {/* </CardActionArea> */}
+             
             </Box>
-          </Grid>
-        </Grid>
-        <br />
-        <br />
+          </Grid> */}
+        {/* </Grid> */}
+       
       </Container>
     </>
   );
