@@ -87,44 +87,44 @@ const CardData = [
     id: 2,
     image: Diving,
     cardName: "Diving",
-    path: '/ToursAndHires',
+    path: '/Diving',
    
   },
   {
     id: 3,
     image: Whale_Watching,
     cardName: "Whale Watching",
-    path: '/ToursAndHires',
+    path: '/WhaleWatching',
   },
   {
     id: 4,
     image: Vehicle_Rent,
     cardName: "Vehicle Rent",
-    path: '/ToursAndHires',
+    path: '/VehicleRent',
   },
   {
     id: 5,
     image: Mobile_Topups,
     cardName: "Mobile topups & Sim cards",
-    path: '/ToursAndHires',
+    path: '/MobileTopup',
   },
   {
     id: 6,
     image: Restaurants,
     cardName: "Restaurants",
-    path: '/ToursAndHires',
+    path: '/Restaurants',
   },
   {
     id: 7,
     image: Massaging_Spa,
     cardName: "Massaging & Spa",
-    path: '/ToursAndHires',
+    path: '/MassagingAndSpa',
   },
   {
     id: 8,
     image: Surfing,
     cardName: "Surfing",
-    path: '/ToursAndHires',
+    path: '/Surfing',
   },
 ];
 
