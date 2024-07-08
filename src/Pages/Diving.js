@@ -19,6 +19,7 @@ export default function Diving() {
                 height: 390,
                 borderRadius: 6,
                 boxShadow: "0px 3px 6px rgba(0, 0, 0, 0)",
+                background:"rgb(60, 179, 113, 0.1)",
               }}
             >
               <Box sx={{ display: "flex", flexDirection: "column" }}>
