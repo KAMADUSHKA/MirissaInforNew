@@ -16,7 +16,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import imgS1 from "../Image/Surfing.jpg";
+import imgS1 from "../Image/Hire_and_Taxi.jpg";
 import { red } from "@mui/material/colors";
 
 
@@ -25,56 +25,56 @@ const CardData = [
   {
     id: 1,
     image: imgS1,
-    cardName: "Mirissa infor Surfing card",
+    cardName: "Mirissa infor Tours and Hires card",
     cardSubName: "Mirissa best business site",
     // path: "/ToursAndHires",
   },
   {
     id: 2,
     image: imgS1,
-    cardName: "Mirissa infor Surfing card",
+    cardName: "Mirissa infor Tours and Hires card",
     cardSubName: "Mirissa best business site",
     // path: "/Diving",
   },
   {
     id: 3,
     image: imgS1,
-    cardName: "Mirissa infor Surfing card",
+    cardName: "Mirissa infor Tours and Hires card",
     cardSubName: "Mirissa best business site",
     // path: "/WhaleWatching",
   },
   {
     id: 4,
     image: imgS1,
-    cardName: "Mirissa infor Surfing card",
+    cardName: "Mirissa infor Tours and Hires card",
     cardSubName: "Mirissa best business site",
     // path: "/VehicleRent",
   },
   {
     id: 5,
     image: imgS1,
-    cardName: "Mirissa infor Surfing card",
+    cardName: "Mirissa infor Tours and Hires card",
     cardSubName: "Mirissa best business site",
     // path: "/MobileTopup",
   },
   {
     id: 6,
     image: imgS1,
-    cardName: "Mirissa infor Surfing card",
+    cardName: "Mirissa infor Tours and Hires card",
     cardSubName: "Mirissa best business site",
     // path: "/Restaurants",
   },
   {
     id: 7,
     image: imgS1,
-    cardName: "Mirissa infor Surfing card",
+    cardName: "Mirissa infor Tours and Hires card",
     cardSubName: "Mirissa best business site",
     // path: "/MassagingAndSpa",
   },
   {
     id: 8,
     image: imgS1,
-    cardName: "Mirissa infor Surfing card",
+    cardName: "Mirissa infor Tours and Hires card",
     cardSubName: "Mirissa best business site",
     // path: "/Surfing",
   },
