@@ -15,7 +15,7 @@ import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import imgS1 from "../Image/Surfing.jpg";
-import { Container, Grid } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import { Key } from "@mui/icons-material";
 
 const CardData = [
@@ -72,8 +72,18 @@ const CardData = [
 export default function Surfing() {
   const sellingCard = (item, key) => (
     <Grid key={key} item xs={12} sm={6} md={4} lg={4} xl={3}>
+      {/* <Box
+          sx={{
+            Width:'auto',
+            height: 300,
+            // backgroundColor: "transparent",
+            // borderRadius: 6,
+            backgroundColor: "rgba(197, 235, 170, 0.5)",
+            border: "transparent",
+          }}
+        > */}
       <Card
-        sx={{ maxWidth: 345, alignItems: "center", justifyContent: "center" }}
+        sx={{ maxWidth: 485, alignItems: "center", justifyContent: "center", paddingLeft:3, paddingRight:3 }}
       >
         <CardHeader
           avatar={
@@ -103,13 +113,14 @@ export default function Surfing() {
           </Typography>
         </CardContent>
       </Card>
+      {/* </Box> */}
     </Grid>
   );
 
   return (
     <>
       <Container>
-        <Grid container spacing={1} marginTop={3} marginBottom={3}>
+        <Grid container spacing={2} marginTop={3} marginBottom={3}>
           {CardData.map((card, key) => sellingCard(card, key))}
         </Grid>
       </Container>
