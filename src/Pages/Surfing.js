@@ -22,50 +22,58 @@ const CardData = [
   {
     id: 1,
     image: imgS1,
-    cardName: "Tours & Hires",
-    path: "/ToursAndHires",
+    cardName: "Mirissa infor Surfing card",
+    cardSubName: "Mirissa best business site",
+    // path: "/ToursAndHires",
   },
   {
     id: 2,
     image: imgS1,
-    cardName: "Diving",
-    path: "/Diving",
+    cardName: "Mirissa infor Surfing card",
+    cardSubName: "Mirissa best business site",
+    // path: "/Diving",
   },
   {
     id: 3,
     image: imgS1,
-    cardName: "Whale Watching",
-    path: "/WhaleWatching",
+    cardName: "Mirissa infor Surfing card",
+    cardSubName: "Mirissa best business site",
+    // path: "/WhaleWatching",
   },
   {
     id: 4,
     image: imgS1,
-    cardName: "Vehicle Rent",
-    path: "/VehicleRent",
+    cardName: "Mirissa infor Surfing card",
+    cardSubName: "Mirissa best business site",
+    // path: "/VehicleRent",
   },
   {
     id: 5,
     image: imgS1,
-    cardName: "Mobile topups & Sim cards",
-    path: "/MobileTopup",
+    cardName: "Mirissa infor Surfing card",
+    cardSubName: "Mirissa best business site",
+    // path: "/MobileTopup",
   },
   {
     id: 6,
     image: imgS1,
-    cardName: "Restaurants",
-    path: "/Restaurants",
+    cardName: "Mirissa infor Surfing card",
+    cardSubName: "Mirissa best business site",
+    // path: "/Restaurants",
   },
   {
     id: 7,
     image: imgS1,
-    cardName: "Massaging & Spa",
-    path: "/MassagingAndSpa",
+    cardName: "Mirissa infor Surfing card",
+    cardSubName: "Mirissa best business site",
+    // path: "/MassagingAndSpa",
   },
   {
     id: 8,
     image: imgS1,
-    cardName: "Surfing",
-    path: "/Surfing",
+    cardName: "Mirissa infor Surfing card",
+    cardSubName: "Mirissa best business site",
+    // path: "/Surfing",
   },
 ];
 
@@ -91,13 +99,13 @@ export default function Surfing() {
               R
             </Avatar>
           }
-          action={
-            <IconButton aria-label="settings">
-              <MoreVertIcon />
-            </IconButton>
-          }
-          title="Shrimp and Chorizo Paella"
-          subheader="September 14, 2016"
+          // action={
+          //   <IconButton aria-label="settings">
+          //     <MoreVertIcon />
+          //   </IconButton>
+          // }
+          title={item.cardName}
+          subheader={item.cardSubName}
         />
         <CardMedia
           component="img"
