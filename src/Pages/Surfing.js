@@ -109,7 +109,7 @@ export default function Surfing() {
         />
         <CardMedia
           component="img"
-          height="194"
+          height="280"
           image={imgS1}
           alt="Paella dish"
         />
