@@ -17,10 +17,10 @@ import LOGO from "../Image/LOGO11.jpg";
 import CallIcon from "@mui/icons-material/Call";
 
 const pages = [
+  "Visiting Places",
   "Tours & Hires",
   "Whale Watching",
   "Vehicle Rent",
-  "Hotel, Restaurants & Spa",
   "Surfing",
 ];
 const settings = ["Profile", "LogIn", "LogOut"];
@@ -117,8 +117,8 @@ export default function Header() {
                     if (page === "Vehicle Rent") {
                       window.location.href = "/VehicleRent"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
-                    if (page === "Hotel, Restaurants & Spa") {
-                      window.location.href = "/Restaurants"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                    if (page === "Visiting Places") {
+                      window.location.href = "/VisitingPlaces"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
                     if (page === "Surfing") {
                       window.location.href = "/Surfing"; // Navigate to "/Plans_and_Diets" for the "Blog" button
@@ -177,8 +177,8 @@ export default function Header() {
                   if (page === "Vehicle Rent") {
                     window.location.href = "/VehicleRent"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
-                  if (page === "Hotel, Restaurants & Spa") {
-                    window.location.href = "/Restaurants"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                  if (page === "Visiting Places") {
+                    window.location.href = "/VisitingPlaces"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
                   if (page === "Surfing") {
                     window.location.href = "/Surfing"; // Navigate to "/Plans_and_Diets" for the "Blog" button

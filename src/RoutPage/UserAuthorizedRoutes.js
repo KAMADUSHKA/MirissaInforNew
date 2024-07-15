@@ -18,6 +18,7 @@ import MobileTopup from "../Pages/MobileTopup";
 import Restaurants from "../Pages/Restaurants";
 import MassagingAndSpa from "../Pages/MassagingAndSpa";
 import Surfing from "../Pages/Surfing";
+import VisitingPlaces from "../Pages/VisitingPlaces";
 // import Dashbord from "../Pages/Dashbord";
 
 
@@ -64,6 +65,10 @@ const UserAuthorizedRoutes = [
       },  {
         path:"/Surfing",
         element:<Surfing/> 
+      },
+      {
+        path:"/VisitingPlaces",
+        element:<VisitingPlaces/>
       },
       // {
       //   path:"/MobileTopup",
