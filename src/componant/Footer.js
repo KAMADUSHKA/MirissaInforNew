@@ -257,7 +257,7 @@ export default function Footer() {
     //         />
     //         <div style={{ display: "flex", marginLeft: "auto" }}>
     //           <Typography>Privacy Policy</Typography>
-    //           &nbsp;&nbsp; &nbsp;&nbsp;
+    //           &nbsp;&nbsp; nbsp;&nbsp;
     //           <Typography>Terms</Typography>
     //           &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
     //         </div>
