@@ -199,7 +199,8 @@ export default function Header() {
               </Button>
             ))}
           </Box>
-          <Box
+          <a href="https://wa.me/94713321950" style={{ textDecoration: 'none' }}>
+          <Button variant="outlined"
             sx={{color:"#be43fb" ,display: { xs: "none", lg: "flex" }, padding: "5px 10px",border: "1px solid #be43fb",borderRadius: "5px", }}
           >
             <CallIcon />
@@ -217,7 +218,8 @@ export default function Header() {
             >
              : +94713321950
             </Typography>
-          </Box>
+          </Button>
+          </a>
         </Toolbar>
       </Container>
     </AppBar>

@@ -74,57 +74,64 @@ import { Autoplay, Pagination } from "swiper/modules";
 import MataraToKadavatha from "../MUI/MataraToKadavatha";
 import KadawathaToMatara from "../MUI/KadawathaToMatara";
 import { useNavigate } from "react-router-dom";
+import TourAndHireId1 from "../Image/ToursAndHires/id-1.jpg";
+
+
+
+
+
+
+
 
 const CardData = [
   {
     id: 1,
-    image: Hire_and_Taxi,
+    // image: Hire_and_Taxi,
+    image: TourAndHireId1,
     cardName: "Tours & Hires",
-    path: '/ToursAndHires',
-    
+    path: "/ToursAndHires",
   },
   {
     id: 2,
     image: Diving,
     cardName: "Diving",
-    path: '/Diving',
-   
+    path: "/Diving",
   },
   {
     id: 3,
     image: Whale_Watching,
     cardName: "Whale Watching",
-    path: '/WhaleWatching',
+    path: "/WhaleWatching",
   },
   {
     id: 4,
     image: Vehicle_Rent,
     cardName: "Vehicle Rent",
-    path: '/VehicleRent',
+    path: "/VehicleRent",
   },
   {
     id: 5,
     image: Mobile_Topups,
     cardName: "Mobile topups & Sim cards",
-    path: '/MobileTopup',
+    path: "/MobileTopup",
   },
   {
     id: 6,
     image: Restaurants,
     cardName: "Restaurants",
-    path: '/Restaurants',
+    path: "/Restaurants",
   },
   {
     id: 7,
     image: Massaging_Spa,
     cardName: "Massaging & Spa",
-    path: '/MassagingAndSpa',
+    path: "/MassagingAndSpa",
   },
   {
     id: 8,
     image: Surfing,
     cardName: "Surfing",
-    path: '/Surfing',
+    path: "/Surfing",
   },
 ];
 
@@ -155,6 +162,12 @@ export default function Dashbord() {
   const handleClick = (path) => {
     navigate(path); // Navigate to the specified path
   };
+
+  
+
+
+
+
 
   const swiperCard = (item, key) => (
     <SwiperSlide>
@@ -258,9 +271,7 @@ export default function Dashbord() {
             <img src={item.image} height="auto" width="200px" />
           </Box>
         </Box>
-        <CardActionArea
-         
-        >
+        <CardActionArea>
           <container>
             <Box
               sx={{
@@ -329,7 +340,7 @@ export default function Dashbord() {
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
-                borderRadius: 'inherit' 
+                borderRadius: "inherit",
               }}
             />
           </Card>
@@ -379,17 +390,16 @@ export default function Dashbord() {
             textShadow: "1px 5px 4px rgba(18,104,18,0.2)",
           }}
         >
-          MIRISSA
+          WELCOME TO MIRISSA
         </Typography>
-      
-        <Typography  >
-          Mirissa is a small town on the south coast of Sri Lanka,
-          located in the Matara District of the Southern Province. It is
-          approximately 150 kilometres (93 mi) south of Colombo and is situated
-          at an elevation of 4 metres (13 ft) above sea level. Mirissa's beach
-          and nightlife make it a popular tourist destination. It is also a
-          fishing port and one of the island's main whale and dolphin watching
-          locations.
+
+        <Typography>
+          Mirissa, a picturesque town on Sri Lanka's south coast, is famous for
+          its beautiful beach, vibrant nightlife, and bustling fishing port.
+          Just 150 km south of Colombo, this tropical haven is one of the
+          island's premier whale and dolphin watching spots. Whether you're
+          looking to relax on golden sands, enjoy fresh seafood, or embark on an
+          ocean adventure, Mirissa has something for everyone.
         </Typography>
 
         {/* <Typography
@@ -407,7 +417,20 @@ export default function Dashbord() {
         </Typography>
         <br /> */}
 
-        
+        <br />
+        <Typography
+          variant="h3"
+          align="center"
+          // gutterBottom
+          sx={{
+            fontWeight: "bold",
+            fontFamily: "Cormorant Garamond, serif",
+            color: "#be43fb",
+            textShadow: "1px 5px 4px rgba(18,104,18,0.2)",
+          }}
+        >
+          CATEGORIES
+        </Typography>
         <br />
 
         <Swiper
@@ -450,7 +473,7 @@ export default function Dashbord() {
         <br />
         <br />
         <br />
-       
+
         {/* <Typography
           variant="h2"
           align="center"
@@ -467,7 +490,7 @@ export default function Dashbord() {
         {/* <br /> */}
         {/* <br /> */}
         {/* <Grid container spacing={1} marginTop={3} marginBottom={3}> */}
-          {/* <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
+        {/* <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
             <Box
               sx={{
                 Width: 145,
@@ -522,7 +545,7 @@ export default function Dashbord() {
             </Box>
           </Grid> */}
         {/* </Grid> */}
-       
+
       </Container>
     </>
   );

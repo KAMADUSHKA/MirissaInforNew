@@ -2,6 +2,7 @@ import {
   Avatar,
   Box,
   Card,
+  CardActionArea,
   CardContent,
   CardHeader,
   CardMedia,
@@ -22,7 +23,14 @@ import id1 from "../Image/ToursAndHires/id-1.jpg";
 import { red } from "@mui/material/colors";
 import CallIcon from '@mui/icons-material/Call';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { WhatsApp } from "@mui/icons-material";
+import { Key, WhatsApp } from "@mui/icons-material";
+import { SwiperSlide } from "swiper/react";
+import { useNavigate } from "react-router-dom";
+import Swiper from "swiper";
+import { Autoplay, Pagination } from "swiper/modules";
+import CategorySwiper from "../componant/CategorySwiper";
+
+
 
 const CardData = [
   {
@@ -32,7 +40,8 @@ const CardData = [
     cardSubName: "",
     link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.2745983449754!2d80.4708050741119!3d5.956855329490534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13fc6ee1bf711%3A0xe1bfa6ccb0ea10b!2sMirissa!5e0!3m2!1sen!2slk!4v1721060011284!5m2!1sen!2slk",
     call:"+94779716434",
-    WhatsApp:"+94779716434"
+    WhatsApp:"+94779716434",
+    date:"2024/07/18"
   },
   {
     id: 2,
@@ -86,6 +95,10 @@ const CardData = [
 ];
 
 export default function ToursAndHires() {
+ 
+  
+
+
   const sellingCard = (item, key) => (
     <Grid key={key} item xs={12} sm={12} md={6} lg={4} xl={4}>
       {/* <Box
@@ -186,6 +199,7 @@ export default function ToursAndHires() {
 
   return (
     <>
+  <CategorySwiper/>
       <Container>
         <Grid container spacing={2} marginTop={3} marginBottom={3}>
           {CardData.map((card, key) => sellingCard(card, key))}
