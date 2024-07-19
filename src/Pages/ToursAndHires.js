@@ -40,6 +40,7 @@ const CardData = [
     cardSubName: "",
     link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.2745983449754!2d80.4708050741119!3d5.956855329490534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13fc6ee1bf711%3A0xe1bfa6ccb0ea10b!2sMirissa!5e0!3m2!1sen!2slk!4v1721060011284!5m2!1sen!2slk",
     call:"+94779716434",
+    logoImage:"L",
     WhatsApp:"+94779716434",
     date:"2024/07/18"
   },
@@ -123,7 +124,7 @@ export default function ToursAndHires() {
         <CardHeader
           avatar={
             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-              R
+              {item.logoImage}
             </Avatar>
           }
           // action={
