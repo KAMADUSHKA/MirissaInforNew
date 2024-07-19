@@ -17,6 +17,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import imgS1 from "../Image/Vehicle_Rent.jpg";
 import { Box, Container, Grid } from "@mui/material";
 import { Key } from "@mui/icons-material";
+import CategorySwiper from "../componant/CategorySwiper";
 
 const CardData = [
   {
@@ -127,6 +128,7 @@ export default function VehicleRent() {
 
   return (
     <>
+    <CategorySwiper/>
       <Container>
         <Grid container spacing={2} marginTop={3} marginBottom={3}>
           {CardData.map((card, key) => sellingCard(card, key))}

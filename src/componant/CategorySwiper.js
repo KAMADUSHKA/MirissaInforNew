@@ -97,7 +97,7 @@ export default function CategorySwiper() {
                   bottom: 0,
                   width: "100%",
                   color: "white",
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  backgroundColor: "rgba(0, 0, 0, 0.8)",
                   padding: "10px",
                   textAlign: "center",
                   borderRadius: 10,

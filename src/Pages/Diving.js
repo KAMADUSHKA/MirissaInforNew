@@ -18,6 +18,7 @@ import {
 import React from "react";
 import imgS1 from "../Image/Diving.jpg";
 import { red } from "@mui/material/colors";
+import CategorySwiper from "../componant/CategorySwiper";
 
 const CardData = [
   {
@@ -128,6 +129,7 @@ export default function Diving() {
 
   return (
     <>
+    <CategorySwiper/>
       <Container>
         <Grid container spacing={2} marginTop={3} marginBottom={3}>
           {CardData.map((card, key) => sellingCard(card, key))}
