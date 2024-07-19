@@ -4,6 +4,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from "swiper/modules";
+import { FreeMode} from 'swiper/modules';
 
 
 const categoryCard = [
@@ -64,63 +65,84 @@ export default function CategorySwiper() {
     const navigate = useNavigate();
 
   const handleClick = (path) => {
-    navigate(path); // Navigate to the specified path
+    navigate(path); 
   };
 
 
     const swiperCardCategory = (item, key) => (
-        <SwiperSlide>
-          <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={3}>
-          
-              <CardActionArea onClick={() => handleClick(item.path)}>
-              <Typography>ewfwertfretfer</Typography>
-              </CardActionArea>
-           
-          </Grid>
-        </SwiperSlide>
+      <SwiperSlide key={item.id}>
+      <Grid item xs={12} sm={6} md={4} lg={4} xl={3}>
+        <Box
+          sx={{
+            width: 345,
+            height: 70,
+            backgroundColor: "rgba(197, 235, 170, 0.1)",
+            border: "transparent",
+          }}
+        >
+          <CardActionArea onClick={() => handleClick(item.path)}>
+            <Card
+              sx={{
+                width: 345,
+                height: 55,
+                borderRadius: 6,
+                backgroundColor: "rgba(127, 235, 170, 0.1)",
+                // border: "1px solid rgba(0, 0, 0, 0.2)",
+              }}
+            >
+             
+              <Box
+                sx={{
+                  position: "absolute",
+                  bottom: 0,
+                  width: "100%",
+                  color: "white",
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  padding: "10px",
+                  textAlign: "center",
+                  borderRadius: 10,
+                  // marginTop:10
+                }}
+              >
+                <Typography variant="h6">{item.cardName}</Typography>
+              </Box>
+            </Card>
+          </CardActionArea>
+        </Box>
+      </Grid>
+    </SwiperSlide>
       );
     
     
     
   return (
     <>
-        
         <Swiper
-          // slidesPerView={2}
-          spaceBetween={30}
-          // pagination={{
-          //   clickable: true,
-          // }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          modules={[Autoplay]}
-          className="mySwiper"
-          breakpoints={{
-            // when window width is >= 320px
-            320: {
-              slidesPerView: 1,
-            },
-            // when window width is >= 480px
-            520: {
-              slidesPerView: 2,
-            },
-            // when window width is >= 768px
-            768: {
-              slidesPerView: 2,
-            },
-            // when window width is >= 1024px
-            1024: {
-              slidesPerView: 3,
-            },
-          }}
-        >
-          <Grid container spacing={1} marginTop={3} marginBottom={3}>
-            {categoryCard.map((card, key) => swiperCardCategory(card, key))}
-          </Grid>
-        </Swiper>
+      spaceBetween={30}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      loop={true}
+      modules={[Autoplay]}
+      className="mySwiper"
+      breakpoints={{
+        320: {
+          slidesPerView: 1,
+        },
+        520: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      }}
+    >
+      {categoryCard.map((card) => swiperCardCategory(card))}
+    </Swiper>
     </>
   )
 }
