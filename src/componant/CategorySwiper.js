@@ -1,5 +1,5 @@
 import { Key } from '@mui/icons-material';
-import { Box, Card, CardActionArea, Grid, Typography } from '@mui/material';
+import { Box, Card, CardActionArea, Container, Grid, Typography } from '@mui/material';
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -74,7 +74,7 @@ export default function CategorySwiper() {
       <Grid item xs={12} sm={6} md={4} lg={4} xl={3}>
         <Box
           sx={{
-            width: 345,
+            width: 355,
             height: 70,
             backgroundColor: "rgba(197, 235, 170, 0.1)",
             border: "transparent",
@@ -83,7 +83,7 @@ export default function CategorySwiper() {
           <CardActionArea onClick={() => handleClick(item.path)}>
             <Card
               sx={{
-                width: 345,
+                width: 355,
                 height: 55,
                 borderRadius: 6,
                 backgroundColor: "rgba(127, 235, 170, 0.1)",
@@ -117,6 +117,7 @@ export default function CategorySwiper() {
     
   return (
     <>
+    <Container>
         <Swiper
       spaceBetween={30}
       autoplay={{
@@ -143,6 +144,7 @@ export default function CategorySwiper() {
     >
       {categoryCard.map((card) => swiperCardCategory(card))}
     </Swiper>
+    </Container>
     </>
   )
 }
