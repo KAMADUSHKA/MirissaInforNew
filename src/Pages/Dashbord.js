@@ -75,13 +75,8 @@ import MataraToKadavatha from "../MUI/MataraToKadavatha";
 import KadawathaToMatara from "../MUI/KadawathaToMatara";
 import { useNavigate } from "react-router-dom";
 import TourAndHireId1 from "../Image/ToursAndHires/id-1.jpg";
-
-
-
-
-
-
-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 const CardData = [
   {
@@ -163,12 +158,6 @@ export default function Dashbord() {
     navigate(path); // Navigate to the specified path
   };
 
-  
-
-
-
-
-
   const swiperCard = (item, key) => (
     <SwiperSlide>
       <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={3}>
@@ -223,6 +212,87 @@ export default function Dashbord() {
         </Box>
       </Grid>
     </SwiperSlide>
+  );
+
+  const catagories = (item, key) => (
+    <>
+      <Grid key={Key} item xs={12} sm={12} md={8} lg={6} xl={6}>
+        <Card
+          sx={{
+            display: "flex",
+            Width: 345,
+            height: 235,
+            borderRadius: 6,
+            boxShadow: "0px 3px 6px rgba(0, 0, 0, 0)",
+            outline:2
+            // backgroundColor: "rgb(245, 0, 79, 0.2)",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              // backgroundColor: "rgb(245, 0, 79, 0.3)",
+            }}
+          >
+            <CardContent sx={{ flex: "1 0 auto" }}>
+              <Box
+                sx={{
+                  // backgroundColor: "rgb(60, 179, 113, 0.3)",
+
+                  padding: 1.5,
+                  // paddingBottom:4,
+                  borderRadius: 8,
+                }}
+              >
+                <Typography component="div" variant="h5">
+                  Card Name 
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="text.secondary"
+                  component="div"
+                >
+                Description  Description  Description  Descriptionv    Description  Description   Description
+                </Typography>
+              </Box>
+             
+              <CardMedia
+                component="img"
+                sx={{
+                  height: 235,
+                  width: 240,
+                  display: { xs: "flex", sm: "none" },
+                  marginTop: 1,
+                  marginLeft: 11,
+                }}
+                image={Surfing}
+                // alt="Live from space album cover"
+              />
+            <Box sx={{marginTop:1}}>
+          <IconButton color="primary" href="https://wa.me/94762588260" target="_blank">
+            <WhatsAppIcon />
+          </IconButton>
+          <IconButton color="primary" href="tel:+94762588260">
+            <PhoneIcon />
+          </IconButton>
+          </Box>
+            </CardContent>
+          </Box>
+          
+          <CardMedia
+            component="img"
+            sx={{
+              height: 235,
+              width: 200,
+              display: { xs: "none", sm: "flex" },
+            }}
+            image={Surfing}
+            // alt="Live from space album cover"
+          />
+        </Card>
+      </Grid>
+    </>
   );
 
   const cardData = (item, key) => (
@@ -474,6 +544,10 @@ export default function Dashbord() {
         <br />
         <br />
 
+        <Grid container spacing={1} marginTop={3} marginBottom={4}>
+          {CardData.map((card, key) => catagories(card, key))}
+        </Grid>
+
         {/* <Typography
           variant="h2"
           align="center"
@@ -545,7 +619,6 @@ export default function Dashbord() {
             </Box>
           </Grid> */}
         {/* </Grid> */}
-
       </Container>
     </>
   );
