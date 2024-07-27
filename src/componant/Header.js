@@ -199,7 +199,7 @@ export default function Header() {
               </Button>
             ))}
           </Box>
-          <a href="https://wa.me/94713321950" style={{ textDecoration: 'none' }}>
+          <a href="https://wa.me/947785696390" style={{ textDecoration: 'none' }}>
           <Button variant="outlined"
             sx={{color:"#be43fb" ,display: { xs: "none", lg: "flex" }, padding: "5px 10px",border: "1px solid #be43fb",borderRadius: "5px", }}
           >
@@ -216,7 +216,7 @@ export default function Header() {
                  // Rounded corners
               }}
             >
-             : +94713321950
+             : +947785696390
             </Typography>
           </Button>
           </a>
