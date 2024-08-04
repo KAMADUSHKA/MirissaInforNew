@@ -201,7 +201,7 @@ export default function Header() {
           </Box>
           <a href="https://wa.me/947785696390" style={{ textDecoration: 'none' }}>
           <Button variant="outlined"
-            sx={{color:"#be43fb" ,display: { xs: "none", lg: "flex" }, padding: "5px 10px",border: "1px solid #be43fb",borderRadius: "5px", }}
+            sx={{color:"#be43fb" ,display: { xs: "flex", lg: "flex" }, padding: "5px 10px",border: "1px solid #be43fb",borderRadius: "5px", }}
           >
             <CallIcon />
             &nbsp;&nbsp;

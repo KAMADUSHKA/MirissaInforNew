@@ -130,6 +130,30 @@ const CardData = [
   },
 ];
 
+const BusinessCardData = [
+  {
+    id: 1,
+    // image: Hire_and_Taxi,
+    image: TourAndHireId1,
+    cardName: "Tours & Hires",
+    contact: "/ToursAndHires",
+  },
+  {
+    id: 2,
+    image: Diving,
+    cardName: "Diving",
+    path: "/Diving",
+  },
+  {
+    id: 3,
+    image: Whale_Watching,
+    cardName: "Whale Watching",
+    path: "/WhaleWatching",
+  },
+  
+];
+
+
 const mainSlider = [
   {
     id: 1,
@@ -246,7 +270,7 @@ export default function Dashbord() {
                 }}
               >
                 <Typography component="div" variant="h5">
-                  Card Name 
+                {item.cardName}
                 </Typography>
                 <Typography
                   variant="subtitle1"
@@ -266,7 +290,7 @@ export default function Dashbord() {
                   marginTop: 1,
                   marginLeft: 11,
                 }}
-                image={Surfing}
+                image={item.image}
                 // alt="Live from space album cover"
               />
             <Box sx={{marginTop:1}}>
@@ -545,7 +569,7 @@ export default function Dashbord() {
         <br />
 
         <Grid container spacing={1} marginTop={3} marginBottom={4}>
-          {CardData.map((card, key) => catagories(card, key))}
+          {BusinessCardData.map((card, key) => catagories(card, key))}
         </Grid>
 
         {/* <Typography
