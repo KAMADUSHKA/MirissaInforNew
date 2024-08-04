@@ -135,19 +135,61 @@ const BusinessCardData = [
     id: 1,
     // image: Hire_and_Taxi,
     image: TourAndHireId1,
-    cardName: "Tours & Hires",
-    contact: "/ToursAndHires",
+    cardName: "Low Deep Fishing Tours",
+    contact: "",
   },
   {
     id: 2,
     image: Diving,
-    cardName: "Diving",
+    cardName: "Deep Sea Fishing Tours",
     path: "/Diving",
   },
   {
     id: 3,
     image: Whale_Watching,
-    cardName: "Whale Watching",
+    cardName: "Boat Tours River Safari",
+    path: "/WhaleWatching",
+  },
+  {
+    id: 4,
+    image: Diving,
+    cardName: "Sunset Tours",
+    path: "/Diving",
+  },
+  {
+    id: 5,
+    image: Whale_Watching,
+    cardName: "Snorkeling Tours: 100% Turtles",
+    path: "/WhaleWatching",
+  },
+  {
+    id: 6,
+    image: Diving,
+    cardName: "Snorkeling with Whales",
+    path: "/Diving",
+  },
+  {
+    id: 7,
+    image: Whale_Watching,
+    cardName: "Diving Tours",
+    path: "/WhaleWatching",
+  },
+  {
+    id: 8,
+    image: Whale_Watching,
+    cardName: "Whales Watching Tours",
+    path: "/WhaleWatching",
+  },
+  {
+    id: 9,
+    image: Whale_Watching,
+    cardName: "vehicle rent and hires",
+    path: "/WhaleWatching",
+  },
+  {
+    id: 10,
+    image: Whale_Watching,
+    cardName: "Safari",
     path: "/WhaleWatching",
   },
   
@@ -294,10 +336,10 @@ export default function Dashbord() {
                 // alt="Live from space album cover"
               />
             <Box sx={{marginTop:1}}>
-          <IconButton color="primary" href="https://wa.me/94762588260" target="_blank">
+          <IconButton color="primary" href="https://wa.me/94778569639" target="_blank">
             <WhatsAppIcon />
           </IconButton>
-          <IconButton color="primary" href="tel:+94762588260">
+          <IconButton color="primary" href="tel:+94778569639">
             <PhoneIcon />
           </IconButton>
           </Box>
@@ -311,7 +353,7 @@ export default function Dashbord() {
               width: 200,
               display: { xs: "none", sm: "flex" },
             }}
-            image={Surfing}
+            image={item.image}
             // alt="Live from space album cover"
           />
         </Card>
