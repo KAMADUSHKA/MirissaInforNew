@@ -287,11 +287,13 @@ export default function Dashbord() {
       <Grid key={Key} item xs={12} sm={6} md={6} lg={4} xl={4}>
 
       <Card sx={{ maxWidth: 345 }}>
+        <CardActionArea>
       <CardMedia
         sx={{ height: 340 }}
         image={item.image}
         title="green iguana"
       />
+      </CardActionArea>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
         {item.cardName}
