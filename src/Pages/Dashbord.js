@@ -4,8 +4,10 @@ import { Carousel } from "react-responsive-carousel";
 import {
   Avatar,
   Box,
+  Button,
   Card,
   CardActionArea,
+  CardActions,
   CardContent,
   CardHeader,
   CardMedia,
@@ -282,7 +284,35 @@ export default function Dashbord() {
 
   const catagories = (item, key) => (
     <>
-      <Grid key={Key} item xs={12} sm={12} md={8} lg={6} xl={6}>
+      <Grid key={Key} item xs={12} sm={6} md={6} lg={4} xl={4}>
+
+      <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        sx={{ height: 340 }}
+        image={item.image}
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        {item.cardName}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <IconButton color="primary" href="https://wa.me/94778569639" target="_blank">
+            <WhatsAppIcon />
+          </IconButton>
+          <IconButton color="primary" href="tel:+94778569639">
+            <PhoneIcon />
+          </IconButton>
+      </CardActions>
+    </Card>
+
+
+        {/*  
         <Card
           sx={{
             display: "flex",
@@ -357,6 +387,7 @@ export default function Dashbord() {
             // alt="Live from space album cover"
           />
         </Card>
+        */}
       </Grid>
     </>
   );
@@ -538,20 +569,7 @@ export default function Dashbord() {
           ocean adventure, Mirissa has something for everyone.
         </Typography>
 
-        {/* <Typography
-          variant="h2"
-          align="center"
-          gutterBottom
-          sx={{
-            fontWeight: "bold",
-            fontFamily: "Cormorant Garamond, serif",
-            color: "#be43fb",
-            textShadow: "2px 45px 4px rgba(18,104,18,0.1)",
-          }}
-        >
-          CATEGORIES
-        </Typography>
-        <br /> */}
+        {/*  */}
 
         <br />
         <Typography
