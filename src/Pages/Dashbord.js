@@ -267,7 +267,9 @@ export default function Dashbord() {
             border: "transparent",
           }}
         >
-          <CardActionArea onClick={() => handleClick(item.path)}>
+          <CardActionArea 
+          // onClick={() => handleClick(item.path)}
+          >
             <Card
               sx={{
                 Width: 325,
