@@ -86,6 +86,8 @@ import Sunset_Tours from "../Image/Sunset Tours.png"
 import Snorkeling_Tours from "../Image/Snorkeling Tours.png";
 import Snorkeling_with_Whales from "../Image/Snorkeling with Whales.png"
 import Diving_Tours from "../Image/Diving Tours.png"
+import Yala_Safari from "../Image/Yala Safari.jpg";
+import Mirissa_Secret_lagoon_Safari from "../Image/Mirissa Secret lagoon Safari.jpg"
 
 
 const CardData = [
@@ -202,16 +204,23 @@ const BusinessCardData = [
   },
   {
     id: 9,
-    image: Whale_Watching,
+    image: Yala_Safari,
     cardName: "Yala Safari",
     description: "Udawalawe national park safari provides a great experience for who are interested in seeing large number of flora and fauna. This valuable national park is considered one of the best wild activities that can be done in Sri Lanka. This safari is which you are carried by a jeep along the paths in the park while you can visit all-natural habitats in their freestyle. A maximum of six people can be carried in one jeep comfortably as we care for your protection. As your wish, you can reserve the time and the duration in different categories which we can provide like 3,4 hours half or full day.  Our dedicated representative will be on hand to provide you with an unforgettable experience, including the room amenities you need",
     path: "/WhaleWatching",
   },
   {
     id: 10,
-    image: Whale_Watching,
+    image: TourAndHireId1,
     cardName: "vehicle rent and hires",
     description: "",
+    path: "/WhaleWatching",
+  },
+  {
+    id: 11,
+    image: Mirissa_Secret_lagoon_Safari,
+    cardName: "Mirissa Secret lagoon Safari",
+    description: "Many tourists come to Mirissa for the beautiful beaches and whale watching, but there is another very beautiful place that many people don't know about, the Mirissa Hidden Lagoon. This is an area filled with many species of aquatic animals surrounded by an amazing mangrove ecosystem. This lagoon area, home to waduran relawn and hundreds of bats, is a beautiful escape from the noise of the city. Giving priority to nature, we have started a ferry service here and you can go to the island where the lagoon is shallow and you can see its beautiful environment.",
     path: "/WhaleWatching",
   },
 ];
