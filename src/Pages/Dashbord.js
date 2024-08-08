@@ -189,7 +189,7 @@ const BusinessCardData = [
     id: 7,
     image: Diving_Tours,
     cardName: "Diving Tours",
-    description: "Discover the depths of Mirissa’s vibrant underwater world on our diving tour. Explore stunning coral reefs, mysterious shipwrecks, and diverse marine life. This 1-hour tour is suitable for beginners and experienced divers alike, with professional guides ensuring a safe and exhilarating experience.",
+    description: "Dive into the captivating underwater world of Mirissa on our exciting diving tour. This 1-hour adventure offers a unique opportunity to explore stunning coral reefs teeming with colorful fish, mysterious shipwrecks brimming with history, and a diverse array of marine life. Whether you're a beginner or an experienced diver, our professional guides will ensure a safe, informative, and exhilarating experience.As you descend into the clear, warm waters, you'll be mesmerized by the vibrant ecosystem that thrives beneath the surface. The tour is designed to accommodate all skill levels, providing personalized attention and guidance to ensure everyone has a memorable dive. From the curious novice to the seasoned diver, the beauty and wonder of Mirissa’s underwater paradise await you.",
     path: "/WhaleWatching",
   },
   {
