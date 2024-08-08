@@ -197,7 +197,7 @@ const BusinessCardData = [
     image: Whale_Watching,
     cardName: "Whales And Dolphins Watching Tours",
     description:
-    "Set sail to the depths of the Indian Ocean on a smooth cruise, in search of the magnificent creatures that dwell beneath the surface of the azure waters. Mirissa is the ideal place for whale and dolphin watching between the months of September to April, as the waters become a playground for a myriad of whales and dolphin species. Some of the most commonly spotted whales include sperm whales, killer whales, Bryde whales, short finned whales, while you’ll be able to see schools of bottlenose dolphins and striped dolphins as they playfully frolic around your boat! However, the main whale type to look out for is the blue whale – the largest animal in the world! Whale and Dolphin watching in Mirissa is ideal for nature lovers as they set sail into the ocean. The best time to embark on your adventures is at dawn, and since most boats leave the harbour by at least 6am, an early rise is required. Base yourself at one of our boutique hotels in Mirissa so you can’t save on the extra travel time and get a few more winks in before your day out in the sea begins!",
+    "Embark on a smooth cruise into the Indian Ocean from Mirissa, a prime location for whale and dolphin watching between September and April. During this period, the waters around Mirissa are home to a variety of whale species, including sperm whales, killer whales, Bryde whales, and short-finned whales. You'll also encounter playful schools of bottlenose and striped dolphins. The highlight of the tour is the chance to see the majestic blue whale, the largest animal on Earth. These tours are perfect for nature lovers and typically depart at dawn, with most boats leaving the harbour by 6 AM. Staying at one of our boutique hotels in Mirissa can help you save travel time and enjoy a few extra moments of rest before your ocean adventure begins.",
     path: "/WhaleWatching",
   },
   {
@@ -211,7 +211,7 @@ const BusinessCardData = [
     id: 10,
     image: Whale_Watching,
     cardName: "Yala Safari",
-    description: "Yala National Park has one of the highest densities of wildlife per square kilometer on the island; it is often described as the finest safari destination in Sri Lanka (a country of immense biodiversity). The park is home to a vast variety of wildlife that each and every day presents new and exciting interactions.",
+    description: "Udawalawe national park safari provides a great experience for who are interested in seeing large number of flora and fauna. This valuable national park is considered one of the best wild activities that can be done in Sri Lanka. This safari is which you are carried by a jeep along the paths in the park while you can visit all-natural habitats in their freestyle. A maximum of six people can be carried in one jeep comfortably as we care for your protection. As your wish, you can reserve the time and the duration in different categories which we can provide like 3,4 hours half or full day.  Our dedicated representative will be on hand to provide you with an unforgettable experience, including the room amenities you need",
     path: "/WhaleWatching",
   },
 ];
