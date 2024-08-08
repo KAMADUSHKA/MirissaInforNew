@@ -77,8 +77,16 @@ import MataraToKadavatha from "../MUI/MataraToKadavatha";
 import KadawathaToMatara from "../MUI/KadawathaToMatara";
 import { useNavigate } from "react-router-dom";
 import TourAndHireId1 from "../Image/ToursAndHires/id-1.jpg";
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import PhoneIcon from '@mui/icons-material/Phone';
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import PhoneIcon from "@mui/icons-material/Phone";
+import Low_Deep_Fishing_Tours from "../Image/Low Deep Fishing Tours.png";
+import Deep_Fishing_Tours from "../Image/Deep Sea Fishing Tours.png";
+import Boat_Tours from "../Image/Boat Tours.png"
+import Sunset_Tours from "../Image/Sunset Tours.png"
+import Snorkeling_Tours from "../Image/Snorkeling Tours.png";
+import Snorkeling_with_Whales from "../Image/Snorkeling with Whales.png"
+import Diving_Tours from "../Image/Diving Tours.png"
+
 
 const CardData = [
   {
@@ -136,67 +144,77 @@ const BusinessCardData = [
   {
     id: 1,
     // image: Hire_and_Taxi,
-    image: TourAndHireId1,
+    image: Low_Deep_Fishing_Tours,
     cardName: "Low Deep Fishing Tours",
+    description:
+      "Experience the thrill of fishing in the beautiful sea of Mirissa, Sri Lanka! Our expert guides will take you to the best fishing spots where you can catch a variety of fish, including Red Marlin, Chicken Fish, and Snapper. Whether you’re a seasoned angler or a beginner, our well-equipped boats and professional crew ensure an unforgettable fishing adventure. We provide all the necessary equipment for fishing, and you can choose to fish for fun or catch and release. This 2.5-hour experience promises excitement and memorable moments on the water.",
     contact: "",
   },
   {
     id: 2,
-    image: Diving,
+    image: Deep_Fishing_Tours,
     cardName: "Deep Sea Fishing Tours",
+    description: "Join us for an exciting deep sea fishing adventure! We target big game fish like sailfish, tuna, and mahi-mahi. Whether you're a seasoned angler or a beginner, our well-equipped boats and professional crew ensure an unforgettable fishing experience. Departing at 06:00 AM, this 4-hour trip includes a delicious breakfast, necessary medicines, and all safety equipment. We provide all the fishing gear you need for a safe and thrilling adventure.",
     path: "/Diving",
   },
   {
     id: 3,
-    image: Whale_Watching,
+    image: Boat_Tours,
     cardName: "Boat Tours River Safari",
+    description: "Join us for an unforgettable boat tour around Mirissa's stunning coast. Enjoy breathtaking views, discover hidden places and islands, and watch dolphins in their natural habitat. This 2-hour tour offers packages to suit groups, couples, and solo travelers at reasonable prices. Experience the beauty and excitement of Mirissa's coastline with us!",
     path: "/WhaleWatching",
   },
   {
     id: 4,
-    image: Diving,
+    image: Sunset_Tours,
     cardName: "Sunset Tours",
+    description: "Experience the magic of a Mirissa sunset on our boat tour. For anyone looking to unwind, this serene 2-hour tour offers breathtaking views and unforgettable memories. Choose a package that suits you at a reasonable price and join us. We offer tours for groups, couples, and solo travelers.",
     path: "/Diving",
   },
   {
     id: 5,
-    image: Whale_Watching,
+    image: Snorkeling_Tours,
     cardName: "Snorkeling Tours: 100% Turtles",
+    description: "Dive into the clear waters of Mirissa on our snorkeling tour and encounter sea turtles, guaranteed! Explore vibrant coral reefs, exotic fish, and other marine life with top-quality gear and expert guidance. This 2-hour adventure includes a Life Guard Team and all necessary safety equipment. Whether you're a seasoned snorkeler or a beginner, this tour promises an unforgettable underwater experience.",
     path: "/WhaleWatching",
   },
   {
     id: 6,
-    image: Diving,
+    image: Snorkeling_with_Whales,
     cardName: "Snorkeling with Whales",
+    description: "Experience the thrill of a lifetime by snorkeling alongside the blue giants of the ocean. Join us to swim with these magnificent creatures and enjoy an unforgettable adventure. Whether you're a seasoned snorkeler or a beginner, our well-equipped boats and professional crew ensure a safe and exhilarating experience. Departing at 06:00 AM, this 4-hour tour includes a delicious breakfast, top-quality gear, all necessary safety equipment, and the support of our Life Guard Team. Glide through Mirissa's sea waters and explore the underwater world with expert guidance.",
     path: "/Diving",
   },
   {
     id: 7,
-    image: Whale_Watching,
+    image: Diving_Tours,
     cardName: "Diving Tours",
+    description: "Discover the depths of Mirissa’s vibrant underwater world on our diving tour. Explore stunning coral reefs, mysterious shipwrecks, and diverse marine life. This 1-hour tour is suitable for beginners and experienced divers alike, with professional guides ensuring a safe and exhilarating experience.",
     path: "/WhaleWatching",
   },
   {
     id: 8,
     image: Whale_Watching,
-    cardName: "Whales Watching Tours",
+    cardName: "Whales And Dolphins Watching Tours",
+    description:
+    "Set sail to the depths of the Indian Ocean on a smooth cruise, in search of the magnificent creatures that dwell beneath the surface of the azure waters. Mirissa is the ideal place for whale and dolphin watching between the months of September to April, as the waters become a playground for a myriad of whales and dolphin species. Some of the most commonly spotted whales include sperm whales, killer whales, Bryde whales, short finned whales, while you’ll be able to see schools of bottlenose dolphins and striped dolphins as they playfully frolic around your boat! However, the main whale type to look out for is the blue whale – the largest animal in the world! Whale and Dolphin watching in Mirissa is ideal for nature lovers as they set sail into the ocean. The best time to embark on your adventures is at dawn, and since most boats leave the harbour by at least 6am, an early rise is required. Base yourself at one of our boutique hotels in Mirissa so you can’t save on the extra travel time and get a few more winks in before your day out in the sea begins!",
     path: "/WhaleWatching",
   },
   {
     id: 9,
     image: Whale_Watching,
     cardName: "vehicle rent and hires",
+    description: "",
     path: "/WhaleWatching",
   },
   {
     id: 10,
     image: Whale_Watching,
-    cardName: "Safari",
+    cardName: "Yala Safari",
+    description: "Yala National Park has one of the highest densities of wildlife per square kilometer on the island; it is often described as the finest safari destination in Sri Lanka (a country of immense biodiversity). The park is home to a vast variety of wildlife that each and every day presents new and exciting interactions.",
     path: "/WhaleWatching",
   },
-  
 ];
-
 
 const mainSlider = [
   {
@@ -285,34 +303,35 @@ export default function Dashbord() {
   const catagories = (item, key) => (
     <>
       <Grid key={Key} item xs={12} sm={6} md={6} lg={4} xl={4}>
-
-      <Card sx={{ maxWidth: 345 }}>
-        <CardActionArea>
-      <CardMedia
-        sx={{ height: 340 }}
-        image={item.image}
-        title="green iguana"
-      />
-      </CardActionArea>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        {item.cardName}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-      <IconButton color="primary" href="https://wa.me/94778569639" target="_blank">
-            <WhatsAppIcon />
-          </IconButton>
-          <IconButton color="primary" href="tel:+94778569639">
-            <PhoneIcon />
-          </IconButton>
-      </CardActions>
-    </Card>
-
+        <Card sx={{ maxWidth: 345 }}>
+          <CardActionArea>
+            <CardMedia
+              sx={{ height: 340 }}
+              image={item.image}
+              title="green iguana"
+            />
+          </CardActionArea>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {item.cardName}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {item.description}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <IconButton
+              color="primary"
+              href="https://wa.me/94778569639"
+              target="_blank"
+            >
+              <WhatsAppIcon />
+            </IconButton>
+            <IconButton color="primary" href="tel:+94778569639">
+              <PhoneIcon />
+            </IconButton>
+          </CardActions>
+        </Card>
 
         {/*  
         <Card
