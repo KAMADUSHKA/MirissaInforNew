@@ -203,18 +203,19 @@ const BusinessCardData = [
   {
     id: 9,
     image: Whale_Watching,
-    cardName: "vehicle rent and hires",
-    description: "",
+    cardName: "Yala Safari",
+    description: "Udawalawe national park safari provides a great experience for who are interested in seeing large number of flora and fauna. This valuable national park is considered one of the best wild activities that can be done in Sri Lanka. This safari is which you are carried by a jeep along the paths in the park while you can visit all-natural habitats in their freestyle. A maximum of six people can be carried in one jeep comfortably as we care for your protection. As your wish, you can reserve the time and the duration in different categories which we can provide like 3,4 hours half or full day.  Our dedicated representative will be on hand to provide you with an unforgettable experience, including the room amenities you need",
     path: "/WhaleWatching",
   },
   {
     id: 10,
     image: Whale_Watching,
-    cardName: "Yala Safari",
-    description: "Udawalawe national park safari provides a great experience for who are interested in seeing large number of flora and fauna. This valuable national park is considered one of the best wild activities that can be done in Sri Lanka. This safari is which you are carried by a jeep along the paths in the park while you can visit all-natural habitats in their freestyle. A maximum of six people can be carried in one jeep comfortably as we care for your protection. As your wish, you can reserve the time and the duration in different categories which we can provide like 3,4 hours half or full day.  Our dedicated representative will be on hand to provide you with an unforgettable experience, including the room amenities you need",
+    cardName: "vehicle rent and hires",
+    description: "",
     path: "/WhaleWatching",
   },
 ];
+
 
 const mainSlider = [
   {
