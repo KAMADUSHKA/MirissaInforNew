@@ -18,10 +18,10 @@ import CallIcon from "@mui/icons-material/Call";
 
 const pages = [
   "Visiting Places",
-  "Tours & Hires",
-  "Whale Watching",
-  "Vehicle Rent",
-  "Surfing",
+  // "Tours & Hires",
+  // "Whale Watching",
+  // "Vehicle Rent",
+  // "Surfing",
 ];
 const settings = ["Profile", "LogIn", "LogOut"];
 
@@ -107,22 +107,22 @@ export default function Header() {
                 <MenuItem
                   key={page}
                   onClick={() => {
-                    handleCloseNavMenu();
-                    if (page === "Tours & Hires") {
-                      window.location.href = "/ToursAndHires"; // Navigate to "/Plans_and_Diets" for the "Blog" button
-                    }
-                    if (page === "Whale Watching") {
-                      window.location.href = "/WhaleWatching"; // Navigate to "/Plans_and_Diets" for the "Blog" button
-                    }
-                    if (page === "Vehicle Rent") {
-                      window.location.href = "/VehicleRent"; // Navigate to "/Plans_and_Diets" for the "Blog" button
-                    }
+                    // handleCloseNavMenu();
+                    // if (page === "Tours & Hires") {
+                    //   window.location.href = "/ToursAndHires"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                    // }
+                    // if (page === "Whale Watching") {
+                    //   window.location.href = "/WhaleWatching"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                    // }
+                    // if (page === "Vehicle Rent") {
+                    //   window.location.href = "/VehicleRent"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                    // }
                     if (page === "Visiting Places") {
                       window.location.href = "/VisitingPlaces"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                     }
-                    if (page === "Surfing") {
-                      window.location.href = "/Surfing"; // Navigate to "/Plans_and_Diets" for the "Blog" button
-                    }
+                    // if (page === "Surfing") {
+                    //   window.location.href = "/Surfing"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                    // }
                   }}
                   sx={{ backgroundColor: "rgb(0, 0, 0)" }}
                 >
@@ -168,21 +168,21 @@ export default function Header() {
                 key={page}
                 onClick={() => {
                   handleCloseNavMenu(); // Close the navigation menu
-                  if (page === "Tours & Hires") {
-                    window.location.href = "/ToursAndHires"; // Navigate to "/Plans_and_Diets" for the "Blog" button
-                  }
-                  if (page === "Whale Watching") {
-                    window.location.href = "/WhaleWatching"; // Navigate to "/Plans_and_Diets" for the "Blog" button
-                  }
-                  if (page === "Vehicle Rent") {
-                    window.location.href = "/VehicleRent"; // Navigate to "/Plans_and_Diets" for the "Blog" button
-                  }
+                  // if (page === "Tours & Hires") {
+                  //   window.location.href = "/ToursAndHires"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                  // }
+                  // if (page === "Whale Watching") {
+                  //   window.location.href = "/WhaleWatching"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                  // }
+                  // if (page === "Vehicle Rent") {
+                  //   window.location.href = "/VehicleRent"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                  // }
                   if (page === "Visiting Places") {
                     window.location.href = "/VisitingPlaces"; // Navigate to "/Plans_and_Diets" for the "Blog" button
                   }
-                  if (page === "Surfing") {
-                    window.location.href = "/Surfing"; // Navigate to "/Plans_and_Diets" for the "Blog" button
-                  }
+                  // if (page === "Surfing") {
+                  //   window.location.href = "/Surfing"; // Navigate to "/Plans_and_Diets" for the "Blog" button
+                  // }
                 }}
                 sx={{
                   my: 2,
