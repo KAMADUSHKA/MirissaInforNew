@@ -45,8 +45,8 @@ import H4 from "../Image/H4.png";
 import NF from "../Image/NF.jpg";
 import NC from "../Image/NC.jpg";
 import NS from "../Image/NS.jpg";
-import C1 from "../Image/C1.jpg";
-import C2 from "../Image/C2.jpg";
+import Mirissa_C1 from "../Image/Mirissa_C1.jpg";
+import Mirissa_C2 from "../Image/Mirissa_C2.jpg";
 import C3 from "../Image/C3.jpg";
 import C4 from "../Image/C4.jpg";
 import Vehicle_Rent from "../Image/Vehicle_Rent.jpg";
@@ -229,11 +229,11 @@ const BusinessCardData = [
 const mainSlider = [
   {
     id: 1,
-    img: C1,
+    img: Mirissa_C1,
   },
   {
     id: 2,
-    img: C2,
+    img: Mirissa_C2,
   },
   {
     id: 3,
