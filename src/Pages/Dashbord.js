@@ -47,8 +47,8 @@ import NC from "../Image/NC.jpg";
 import NS from "../Image/NS.jpg";
 import Mirissa_C1 from "../Image/Mirissa_C1.jpg";
 import Mirissa_C2 from "../Image/Mirissa_C2.jpg";
-import C3 from "../Image/C3.jpg";
-import C4 from "../Image/C4.jpg";
+import Mirissa_C3 from "../Image/Mirissa_C3.jpg";
+import Mirissa_C4 from "../Image/Mirissa_C4.jpg";
 import Vehicle_Rent from "../Image/Vehicle_Rent.jpg";
 import Massaging_Spa from "../Image/Massaging_&_Spa.jpg";
 import Diving from "../Image/Diving.jpg";
@@ -81,14 +81,13 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import PhoneIcon from "@mui/icons-material/Phone";
 import Low_Deep_Fishing_Tours from "../Image/Low Deep Fishing Tours.png";
 import Deep_Fishing_Tours from "../Image/Deep Sea Fishing Tours.png";
-import Boat_Tours from "../Image/Boat Tours.png"
-import Sunset_Tours from "../Image/Sunset Tours.png"
+import Boat_Tours from "../Image/Boat Tours.png";
+import Sunset_Tours from "../Image/Sunset Tours.png";
 import Snorkeling_Tours from "../Image/Snorkeling Tours.png";
-import Snorkeling_with_Whales from "../Image/Snorkeling with Whales.png"
-import Diving_Tours from "../Image/Diving Tours.png"
+import Snorkeling_with_Whales from "../Image/Snorkeling with Whales.png";
+import Diving_Tours from "../Image/Diving Tours.png";
 import Yala_Safari from "../Image/Yala Safari.jpg";
-import Mirissa_Secret_lagoon_Safari from "../Image/Mirissa Secret lagoon Safari.jpg"
-
+import Mirissa_Secret_lagoon_Safari from "../Image/Mirissa Secret lagoon Safari.jpg";
 
 const CardData = [
   {
@@ -156,42 +155,48 @@ const BusinessCardData = [
     id: 2,
     image: Deep_Fishing_Tours,
     cardName: "Deep Sea Fishing Tours",
-    description: "Join us for an exciting deep sea fishing adventure! We target big game fish like sailfish, tuna, and mahi-mahi. Whether you're a seasoned angler or a beginner, our well-equipped boats and professional crew ensure an unforgettable fishing experience. Departing at 06:00 AM, this 4-hour trip includes a delicious breakfast, necessary medicines, and all safety equipment. We provide all the fishing gear you need for a safe and thrilling adventure.",
+    description:
+      "Join us for an exciting deep sea fishing adventure! We target big game fish like sailfish, tuna, and mahi-mahi. Whether you're a seasoned angler or a beginner, our well-equipped boats and professional crew ensure an unforgettable fishing experience. Departing at 06:00 AM, this 4-hour trip includes a delicious breakfast, necessary medicines, and all safety equipment. We provide all the fishing gear you need for a safe and thrilling adventure.",
     path: "/Diving",
   },
   {
     id: 3,
     image: Boat_Tours,
     cardName: "Boat Tours River Safari",
-    description: "Join us for an unforgettable boat tour around Mirissa's stunning coast. Enjoy breathtaking views, discover hidden places and islands, and watch dolphins in their natural habitat. This 2-hour tour offers packages to suit groups, couples, and solo travelers at reasonable prices. Experience the beauty and excitement of Mirissa's coastline with us!",
+    description:
+      "Join us for an unforgettable boat tour around Mirissa's stunning coast. Enjoy breathtaking views, discover hidden places and islands, and watch dolphins in their natural habitat. This 2-hour tour offers packages to suit groups, couples, and solo travelers at reasonable prices. Experience the beauty and excitement of Mirissa's coastline with us!",
     path: "/WhaleWatching",
   },
   {
     id: 4,
     image: Sunset_Tours,
     cardName: "Sunset Tours",
-    description: "Experience the magic of a Mirissa sunset on our boat tour. For anyone looking to unwind, this serene 2-hour tour offers breathtaking views and unforgettable memories. Choose a package that suits you at a reasonable price and join us. We offer tours for groups, couples, and solo travelers.",
+    description:
+      "Experience the magic of a Mirissa sunset on our boat tour. For anyone looking to unwind, this serene 2-hour tour offers breathtaking views and unforgettable memories. Choose a package that suits you at a reasonable price and join us. We offer tours for groups, couples, and solo travelers.",
     path: "/Diving",
   },
   {
     id: 5,
     image: Snorkeling_Tours,
     cardName: "Snorkeling Tours: 100% Turtles",
-    description: "Dive into the clear waters of Mirissa on our snorkeling tour and encounter sea turtles, guaranteed! Explore vibrant coral reefs, exotic fish, and other marine life with top-quality gear and expert guidance. This 2-hour adventure includes a Life Guard Team and all necessary safety equipment. Whether you're a seasoned snorkeler or a beginner, this tour promises an unforgettable underwater experience.",
+    description:
+      "Dive into the clear waters of Mirissa on our snorkeling tour and encounter sea turtles, guaranteed! Explore vibrant coral reefs, exotic fish, and other marine life with top-quality gear and expert guidance. This 2-hour adventure includes a Life Guard Team and all necessary safety equipment. Whether you're a seasoned snorkeler or a beginner, this tour promises an unforgettable underwater experience.",
     path: "/WhaleWatching",
   },
   {
     id: 6,
     image: Snorkeling_with_Whales,
     cardName: "Snorkeling with Whales",
-    description: "Experience the thrill of a lifetime by snorkeling alongside the blue giants of the ocean. Join us to swim with these magnificent creatures and enjoy an unforgettable adventure. Whether you're a seasoned snorkeler or a beginner, our well-equipped boats and professional crew ensure a safe and exhilarating experience. Departing at 06:00 AM, this 4-hour tour includes a delicious breakfast, top-quality gear, all necessary safety equipment, and the support of our Life Guard Team. Glide through Mirissa's sea waters and explore the underwater world with expert guidance.",
+    description:
+      "Experience the thrill of a lifetime by snorkeling alongside the blue giants of the ocean. Join us to swim with these magnificent creatures and enjoy an unforgettable adventure. Whether you're a seasoned snorkeler or a beginner, our well-equipped boats and professional crew ensure a safe and exhilarating experience. Departing at 06:00 AM, this 4-hour tour includes a delicious breakfast, top-quality gear, all necessary safety equipment, and the support of our Life Guard Team. Glide through Mirissa's sea waters and explore the underwater world with expert guidance.",
     path: "/Diving",
   },
   {
     id: 7,
     image: Diving_Tours,
     cardName: "Diving Tours",
-    description: "Dive into the captivating underwater world of Mirissa on our exciting diving tour. This 1-hour adventure offers a unique opportunity to explore stunning coral reefs teeming with colorful fish, mysterious shipwrecks brimming with history, and a diverse array of marine life. Whether you're a beginner or an experienced diver, our professional guides will ensure a safe, informative, and exhilarating experience.As you descend into the clear, warm waters, you'll be mesmerized by the vibrant ecosystem that thrives beneath the surface. The tour is designed to accommodate all skill levels, providing personalized attention and guidance to ensure everyone has a memorable dive. From the curious novice to the seasoned diver, the beauty and wonder of Mirissa’s underwater paradise await you.",
+    description:
+      "Dive into the captivating underwater world of Mirissa on our exciting diving tour. This 1-hour adventure offers a unique opportunity to explore stunning coral reefs teeming with colorful fish, mysterious shipwrecks brimming with history, and a diverse array of marine life. Whether you're a beginner or an experienced diver, our professional guides will ensure a safe, informative, and exhilarating experience.As you descend into the clear, warm waters, you'll be mesmerized by the vibrant ecosystem that thrives beneath the surface. The tour is designed to accommodate all skill levels, providing personalized attention and guidance to ensure everyone has a memorable dive. From the curious novice to the seasoned diver, the beauty and wonder of Mirissa’s underwater paradise await you.",
     path: "/WhaleWatching",
   },
   {
@@ -199,14 +204,15 @@ const BusinessCardData = [
     image: Whale_Watching,
     cardName: "Whales And Dolphins Watching Tours",
     description:
-    "Embark on a smooth cruise into the Indian Ocean from Mirissa, a prime location for whale and dolphin watching between September and April. During this period, the waters around Mirissa are home to a variety of whale species, including sperm whales, killer whales, Bryde whales, and short-finned whales. You'll also encounter playful schools of bottlenose and striped dolphins. The highlight of the tour is the chance to see the majestic blue whale, the largest animal on Earth. These tours are perfect for nature lovers and typically depart at dawn, with most boats leaving the harbour by 6 AM. Staying at one of our boutique hotels in Mirissa can help you save travel time and enjoy a few extra moments of rest before your ocean adventure begins.",
+      "Embark on a smooth cruise into the Indian Ocean from Mirissa, a prime location for whale and dolphin watching between September and April. During this period, the waters around Mirissa are home to a variety of whale species, including sperm whales, killer whales, Bryde whales, and short-finned whales. You'll also encounter playful schools of bottlenose and striped dolphins. The highlight of the tour is the chance to see the majestic blue whale, the largest animal on Earth. These tours are perfect for nature lovers and typically depart at dawn, with most boats leaving the harbour by 6 AM. Staying at one of our boutique hotels in Mirissa can help you save travel time and enjoy a few extra moments of rest before your ocean adventure begins.",
     path: "/WhaleWatching",
   },
   {
     id: 9,
     image: Yala_Safari,
     cardName: "Udawalawe Safari",
-    description: "Udawalawe national park safari provides a great experience for who are interested in seeing large number of flora and fauna. This valuable national park is considered one of the best wild activities that can be done in Sri Lanka. This safari is which you are carried by a jeep along the paths in the park while you can visit all-natural habitats in their freestyle. A maximum of six people can be carried in one jeep comfortably as we care for your protection. As your wish, you can reserve the time and the duration in different categories which we can provide like 3,4 hours half or full day.  Our dedicated representative will be on hand to provide you with an unforgettable experience, including the room amenities you need",
+    description:
+      "Udawalawe national park safari provides a great experience for who are interested in seeing large number of flora and fauna. This valuable national park is considered one of the best wild activities that can be done in Sri Lanka. This safari is which you are carried by a jeep along the paths in the park while you can visit all-natural habitats in their freestyle. A maximum of six people can be carried in one jeep comfortably as we care for your protection. As your wish, you can reserve the time and the duration in different categories which we can provide like 3,4 hours half or full day.  Our dedicated representative will be on hand to provide you with an unforgettable experience, including the room amenities you need",
     path: "/WhaleWatching",
   },
   {
@@ -220,28 +226,36 @@ const BusinessCardData = [
     id: 11,
     image: Mirissa_Secret_lagoon_Safari,
     cardName: "Mirissa Secret lagoon Safari",
-    description: "Many tourists come to Mirissa for the beautiful beaches and whale watching, but there is another very beautiful place that many people don't know about, the Mirissa Hidden Lagoon. This is an area filled with many species of aquatic animals surrounded by an amazing mangrove ecosystem. This lagoon area, home to waduran relawn and hundreds of bats, is a beautiful escape from the noise of the city. Giving priority to nature, we have started a ferry service here and you can go to the island where the lagoon is shallow and you can see its beautiful environment.",
+    description:
+      "Many tourists come to Mirissa for the beautiful beaches and whale watching, but there is another very beautiful place that many people don't know about, the Mirissa Hidden Lagoon. This is an area filled with many species of aquatic animals surrounded by an amazing mangrove ecosystem. This lagoon area, home to waduran relawn and hundreds of bats, is a beautiful escape from the noise of the city. Giving priority to nature, we have started a ferry service here and you can go to the island where the lagoon is shallow and you can see its beautiful environment.",
     path: "/WhaleWatching",
   },
 ];
-
 
 const mainSlider = [
   {
     id: 1,
     img: Mirissa_C1,
+    firstText: "Coconut Tree Hill Mirissa",
+    secondText: "Where Every Sunset Tells a Story.",
   },
   {
     id: 2,
     img: Mirissa_C2,
+    firstText: "Secret Beach Mirissa",
+    secondText: "Enjoy the Calm, Secluded Atmosphere.",
   },
-  {
-    id: 3,
-    img: C3,
-  },
+  // {
+  //   id: 3,
+  //   img: Mirissa_C3,
+  //   firstText: "aaaaaaaa",
+  //   secondText: "bbbbbbb",
+  // },
   {
     id: 4,
-    img: C4,
+    img: Mirissa_C4,
+    firstText: "Mirissa Beach",
+    secondText: "Golden Sands and Vibrant Sunsets.",
   },
 ];
 
@@ -267,7 +281,7 @@ export default function Dashbord() {
             border: "transparent",
           }}
         >
-          <CardActionArea 
+          <CardActionArea
           // onClick={() => handleClick(item.path)}
           >
             <Card
@@ -508,6 +522,7 @@ export default function Dashbord() {
               lg: 620, // height for lg size and up
               xl: 720, // height for xl size and up
             },
+            position: "relative",
             backgroundColor: "transparent",
             // borderRadius: 6,
             // backgroundColor: "red",
@@ -530,6 +545,7 @@ export default function Dashbord() {
               border: "1px solid rgba(0, 0, 0, 0.2)",
               marginLeft: 1,
               marginRight: 1,
+              position: "relative",
             }}
             // elevation={5}
           >
@@ -543,6 +559,69 @@ export default function Dashbord() {
                 borderRadius: "inherit",
               }}
             />
+
+            <Box
+              sx={{
+                position: "absolute",
+                top: {
+                  xs: "45%", // For smaller screens
+                  md: "50%", // For medium screens
+                  lg: "50%", // For large screens
+                  xl: "50%", // For extra-large screens
+                },
+                left: {
+                  xs: "32%",
+                  md: "30%",
+                  lg: "26%",
+                  xl: "28%",
+                },
+                transform: "translate(-50%, -50%)",
+                color: "white",
+                fontSize: {
+                  xs: "24px", // Smaller font for small screens
+                  md: "38px",
+                  lg: "42px",
+                  xl: "50px", // Larger font for xl screens
+                },
+                fontWeight: "bold",
+                textAlign: "center",
+                animation: "rightToLeft 2s",
+              }}
+            >
+              {item.firstText}
+            </Box>
+
+            {/* Second animated text (Bottom to Up) */}
+            <Box
+              sx={{
+                position: "absolute",
+                bottom: {
+                  xs: "37%", // Closer to the bottom on smaller screens
+                  md: "40%", // Adjusted for medium screens
+                  lg: "40%", // Adjusted for large screens
+                  xl: "40%", // More space for larger screens
+                },
+                left: {
+                  xs: "29%",
+                  md: "26%",
+                  lg: "28%",
+                  xl: "30%",
+                },
+                transform: "translate(-50%, 0)",
+                color: "white",
+                fontSize: {
+                  xs: "12px", // Smaller font for small screens
+                  md: "18px",
+                  lg: "26px",
+                  xl: "33px", // Larger font for xl screens
+                },
+                fontWeight: "bold",
+                textAlign: "center",
+                animation: "bottomToUp 1.8s",
+              }}
+            >
+              {item.secondText}
+            </Box>
           </Card>
           <Box
             style={{
@@ -559,6 +638,21 @@ export default function Dashbord() {
       </Grid>
     </SwiperSlide>
   );
+
+  // Add keyframes for right-to-left and bottom-to-up animations
+  const styles = `
+@keyframes rightToLeft {
+  0% { transform: translate(50%, -50%); opacity: 0; }
+  100% { transform: translate(-50%, -50%); opacity: 1; }
+}
+
+@keyframes bottomToUp {
+  0% { transform: translate(-50%, 50%); opacity: 0; }
+  100% { transform: translate(-50%, 0); opacity: 1; }
+}
+`;
+
+  document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
 
   return (
     <>
