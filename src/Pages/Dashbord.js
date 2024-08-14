@@ -236,7 +236,7 @@ const mainSlider = [
   {
     id: 1,
     img: Mirissa_C1,
-    firstText: "Coconut Tree Hill Mirissa",
+    firstText: "Coconut Tree Hill",
     secondText: "Where Every Sunset Tells a Story.",
   },
   {
@@ -578,7 +578,7 @@ export default function Dashbord() {
                 transform: "translate(-50%, -50%)",
                 color: "white",
                 fontSize: {
-                  xs: "24px", // Smaller font for small screens
+                  xs: "26px", // Smaller font for small screens
                   md: "38px",
                   lg: "42px",
                   xl: "50px", // Larger font for xl screens
