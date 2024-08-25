@@ -56,6 +56,8 @@ import Whale_Watching from "../Image/Whale_Watching.jpg";
 import Mobile_Topups from "../Image/Mobile_Topups.jpg";
 import Restaurants from "../Image/Restaurants.jpg";
 import Surfing from "../Image/Surfing.jpg";
+import AuruwadaSpa_1 from "../Image/AuruwadaSpa-1.jpg";
+import AuruwadaSpa_2 from "../Image/AuruwadaSpa-2.jpg";
 import Hire_and_Taxi from "../Image/Hire_and_Taxi.jpg";
 import { useTheme } from "@emotion/react";
 import { blue } from "@mui/material/colors";
@@ -230,6 +232,14 @@ const BusinessCardData = [
       "Many tourists come to Mirissa for the beautiful beaches and whale watching, but there is another very beautiful place that many people don't know about, the Mirissa Hidden Lagoon. This is an area filled with many species of aquatic animals surrounded by an amazing mangrove ecosystem. This lagoon area, home to waduran relawn and hundreds of bats, is a beautiful escape from the noise of the city. Giving priority to nature, we have started a ferry service here and you can go to the island where the lagoon is shallow and you can see its beautiful environment.",
     path: "/WhaleWatching",
   },
+  {
+    id: 12,
+    image: Mirissa_Secret_lagoon_Safari,
+    cardName: "Mirissa Secret lagoon Safari",
+    description:
+      "Many tourists come to Mirissa for the beautiful beaches and whale watching, but there is another very beautiful place that many people don't know about, the Mirissa Hidden Lagoon. This is an area filled with many species of aquatic animals surrounded by an amazing mangrove ecosystem. This lagoon area, home to waduran relawn and hundreds of bats, is a beautiful escape from the noise of the city. Giving priority to nature, we have started a ferry service here and you can go to the island where the lagoon is shallow and you can see its beautiful environment.",
+    path: "/WhaleWatching",
+  },
 ];
 
 const mainSlider = [
@@ -273,12 +283,13 @@ export default function Dashbord() {
       <Grid key={Key} item xs={12} sm={6} md={4} lg={4} xl={3}>
         <Box
           sx={{
-            Width: 345,
+            width: 345,
             height: 300,
             // backgroundColor: "transparent",
             // borderRadius: 6,
             backgroundColor: "rgba(197, 235, 170, 0.1)",
             border: "transparent",
+           
           }}
         >
           <CardActionArea
@@ -286,7 +297,7 @@ export default function Dashbord() {
           >
             <Card
               sx={{
-                Width: 325,
+                width: 325,
                 height: 300,
                 borderRadius: 6,
                 backgroundColor: "rgba(127, 235, 170, 0.3)",
@@ -655,11 +666,11 @@ export default function Dashbord() {
   document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
 
   return (
-    <>
+    <div style={{ backgroundColor: "#000000" }}>
       <Swiper
         className="mySwiper"
         autoplay={{
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         loop={true}
@@ -674,7 +685,7 @@ export default function Dashbord() {
         {/* OUR PROCESS  */}
 
         <Typography
-          variant="h2"
+          variant="h3"
           align="center"
           // gutterBottom
           sx={{
@@ -687,7 +698,7 @@ export default function Dashbord() {
           WELCOME TO MIRISSA
         </Typography>
 
-        <Typography>
+        <Typography style={{color: "#ffffff" }}>
           Mirissa, a picturesque town on Sri Lanka's south coast, is famous for
           its beautiful beach, vibrant nightlife, and bustling fishing port.
           Just 150 km south of Colombo, this tropical haven is one of the
@@ -700,7 +711,7 @@ export default function Dashbord() {
 
         <br />
         <Typography
-          variant="h3"
+          variant="h4"
           align="center"
           // gutterBottom
           sx={{
@@ -759,78 +770,53 @@ export default function Dashbord() {
           {BusinessCardData.map((card, key) => catagories(card, key))}
         </Grid>
 
-        {/* <Typography
-          variant="h2"
-          align="center"
-          gutterBottom
-          sx={{
-            fontWeight: "bold",
-            fontFamily: "Cormorant Garamond, serif",
-            color: "rgb(18, 104, 18)",
-            textShadow: "2px 45px 4px rgba(18,104,18,0.1)",
-          }}
-        >
-          EXPRESSWAY BUS SERVICE
-        </Typography> */}
-        {/* <br /> */}
-        {/* <br /> */}
-        {/* <Grid container spacing={1} marginTop={3} marginBottom={3}> */}
-        {/* <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
-            <Box
-              sx={{
-                Width: 145,
-                height: 1380,
-                backgroundColor: "transparent",
-                // borderRadius: 6,
-                // backgroundColor: "rgba(197, 235, 170, 0.1)",
-                border: "transparent",
-              }}
-            >
-              
-              <Card
-                sx={{
-                  maxWidth: 395,
-                  height: 1380,
-                  borderRadius: 6,
-                  backgroundColor: "rgba(127, 235, 170, 0.3)",
-                  border: "1px solid rgba(0, 0, 0, 0.2)",
-                }}
-                // elevation={5}
-              >
-                <MataraToKadavatha />
-              </Card>
-              
-            </Box>
+        <Grid container spacing={1} marginTop={3} marginBottom={4}>
+          <Grid key={Key} item xs={12} sm={6} md={6} lg={4} xl={4}>
+            <Card sx={{ maxWidth: 345, marginBottom:10 }}>
+              <CardActionArea>
+                <Swiper
+                  autoplay={{
+                    delay: 3500,
+                    // disableOnInteraction: false,
+                    dynamicBullets: true,
+                  }}
+                  loop={true}
+                  modules={[Autoplay]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>
+                    <CardMedia
+                      sx={{ height: 340 }}
+                      image={AuruwadaSpa_1}
+                      title="green iguana"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardMedia
+                      sx={{ height: 340 }}
+                      image={AuruwadaSpa_2}
+                      title="green iguana"
+                    />
+                  </SwiperSlide>
+                </Swiper>
+              </CardActionArea>
+
+              <CardActions>
+                <IconButton
+                  color="primary"
+                  href="https://wa.me/94702038615"
+                  target="_blank"
+                >
+                  <WhatsAppIcon />
+                </IconButton>
+                <IconButton color="primary" href="tel:+94702038615">
+                  <PhoneIcon />
+                </IconButton>
+              </CardActions>
+            </Card>
           </Grid>
-          <Grid key={Key} item xs={12} sm={6} md={6} lg={6} xl={6}>
-            <Box
-              sx={{
-                Width: 145,
-                height: 1380,
-                backgroundColor: "transparent",
-                // borderRadius: 6,
-                // backgroundColor: "rgba(197, 235, 170, 0.1)",
-                border: "transparent",
-              }}
-            >
-            
-              <Card
-                sx={{
-                  maxWidth: 395,
-                  height: 1380,
-                  borderRadius: 6,
-                  backgroundColor: "rgba(127, 235, 170, 0.3)",
-                  border: "1px solid rgba(0, 0, 0, 0.2)",
-                }}
-                // elevation={5}
-              >
-                <KadawathaToMatara />
-              </Card>
-             
-            </Box>
-          </Grid> */}
-        {/* </Grid> */}
+        </Grid>
       </Container>
-    </>
+    </div>
   );
 }
