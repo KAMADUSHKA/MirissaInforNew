@@ -297,10 +297,10 @@ export default function Dashbord() {
           >
             <Card
               sx={{
-                width: 325,
+                width: 346,
                 height: 300,
                 borderRadius: 6,
-                backgroundColor: "rgba(127, 235, 170, 0.3)",
+                // backgroundColor: "rgba(127, 235, 170, 0.3)",
                 border: "1px solid rgba(0, 0, 0, 0.2)",
               }}
               // elevation={5}
@@ -340,7 +340,7 @@ export default function Dashbord() {
   const catagories = (item, key) => (
     <>
       <Grid key={Key} item xs={12} sm={6} md={6} lg={4} xl={4}>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, }}>
           <CardActionArea>
             <CardMedia
               sx={{ height: 340 }}
